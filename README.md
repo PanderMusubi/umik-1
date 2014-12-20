@@ -41,4 +41,6 @@ Recording with Audacity works after selecting the 'Microphone - 2.0 root hub' de
 
 Calibration
 -----------
-In directory calibration is a script called make-graph.sh for making a graph of the frequency response based on the calibration files.
+In directory calibration is a script called make-graph.sh for making a graph of the frequency response based on the calibration files. An example is below.
+
+![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/calibration/response-7007184.png)
