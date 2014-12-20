@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html slick-uniqueid="3" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" dir="ltr" lang="en-gb"><head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- base href="http://www.minidsp.com/products/acoustic-measurement/umik-1" -->
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="keywords" content="UMIK-1, acoustic measurement, USB measurement microphone, miniDSP umik, umik, speaker measurement">
+  <meta name="title" content="UMIK-1">
+  <meta name="description" content="The UMIK-1 is an omni-directional USB measurement microphone providing Plug &amp; Play acoustic measurement. From speaker &amp; room acoustic measurement to recording, this microphone provides low noise and accurate results you can rely on. ">
+  <meta name="generator" content="Joomla! - Open Source Content Management">
+  <title>UMIK-1 | MiniDSP</title>
+  <script src="UMIK-1%20%7C%20MiniDSP_files/ga.js" async="" type="text/javascript"></script><script src="UMIK-1%20%7C%20MiniDSP_files/cloudflare.js" async=""></script><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1418030488,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok2v=1613a3a185/"},atok:"9585a3c9ce324a72f553496fc87f1a35",petok:"dcedccca9cf9a95aa04574c18b1adf3c5567c748-1419086346-1800",zone:"minidsp.com",rocket:"0",apps:{"ga_key":{"ua":"UA-11052962-3","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok2v=919620257c/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script><style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style>
+<link href="http://www.minidsp.com/products/acoustic-measurement/umik-1" rel="canonical">
+  <link href="UMIK-1%20%7C%20MiniDSP_files/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="http://www.minidsp.com/templates/vcptheme/less/template.less" rel="stylesheet/less" type="text/css"><style id="less:templates-vcptheme-less-template" type="text/css">@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+@font-face {
+  font-family: 'otlapalme_pictos';
+  src: url('http://www.minidsp.com/templates/vcptheme/less/../fonts/otlapalme_pictos.eot'), url('http://www.minidsp.com/templates/vcptheme/less/../fonts/otlapalme_pictos.eot?#iefix') format('embedded-opentype'), url('http://www.minidsp.com/templates/vcptheme/less/../fonts/otlapalme_pictos.woff') format('woff'), url('http://www.minidsp.com/templates/vcptheme/less/../fonts/HelveticaCondensed/helvetica-condensed-bold-webfont.svg#webfontHzLOb6NB') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'socicon';
+  src: url('http://www.minidsp.com/templates/vcptheme/less/../fonts/socicon-webfont.eot');
+  src: url('http://www.minidsp.com/templates/vcptheme/less/../fonts/socicon-webfont.eot?#iefix') format('embedded-opentype'), url('http://www.minidsp.com/templates/vcptheme/less/../fonts/socicon-webfont.woff') format('woff'), url('http://www.minidsp.com/templates/vcptheme/less/../fonts/socicon-webfont.ttf') format('truetype'), url('http://www.minidsp.com/templates/vcptheme/less/../fonts/socicon-webfont.svg#sociconregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/***** General
+------------------------------------------------------------- */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  margin: 0 auto;
+  padding: 0;
+  background: #ffffff;
+  color: #333333;
+}
+body.homepage .main-wapper .main-column .main-content .item-page {
+  border: 0;
+  padding: 0;
+}
+.page-wapper dl#system-message {
+  background: #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
+.page-wapper dl#system-message .info {
+  text-transform: uppercase;
+}
+.page-wapper dl#system-message ul {
+  list-style-type: none;
+  margin: 0 0 0 20px;
+  padding: 0;
+  text-transform: none;
+}
+.page-wapper dl#system-message ul li {
+  margin: 0;
+  padding: 0 0 0 0;
+  list-style-type: disc;
+}
+.page-wapper .glyphicon {
+  font-size: 12px;
+  font-weight: 400;
+}
+.page-wapper .page-header {
+  border: none;
+}
+.page-wapper h1,
+.page-wapper h2,
+.page-wapper h3,
+.page-wapper h4,
+.page-wapper h5,
+.page-wapper h6 {
+  margin: 10px 0;
+  padding: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+.page-wapper h3 {
+  font-size: 18px;
+}
+.page-wapper .container {
+  width: auto !important;
+  max-width: 1170px;
+}
+.page-wapper .img-responsive-full {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+.page-wapper a:link,
+.page-wapper a:visited {
+  text-decoration: none;
+  color: #006eb9;
+}
+.page-wapper a:hover {
+  text-decoration: none;
+  color: #006eb9;
+}
+.page-wapper a.border:link,
+.page-wapper a.border:visited {
+  display: inline-block;
+  color: #006eb9;
+  padding: 6px 1px 6px 12px;
+}
+.page-wapper a.border:hover {
+  box-shadow: 0 0 3px #999;
+  color: #333333;
+  border-radius: 3px;
+}
+.page-wapper a.border i.glyphicon {
+  width: 15px;
+  margin-left: 8px;
+}
+.page-wapper .no-space {
+  margin: 0;
+  padding: 0;
+}
+.page-wapper .box {
+  border: 1px solid #ddd;
+  background: #FFF;
+  border-radius: 0px;
+  padding: 20px;
+  position: relative;
+}
+.page-wapper .box-item {
+  border: 1px solid #ddd;
+  border-right: 0;
+  position: relative;
+}
+.page-wapper .box-item .cover {
+  text-align: center;
+  min-height: 100px;
+}
+.page-wapper .box-item .cover img {
+  display: inline-block !important;
+}
+.page-wapper .box-item .item-cover {
+  padding: 20px;
+  display: block;
+  border: 3px solid #FFF;
+}
+.page-wapper .box-item .item-cover .name {
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.page-wapper .box-item .item-cover .desc {
+  color: #333333;
+}
+.page-wapper .box-item .item-cover .readmore {
+  text-align: right;
+}
+.page-wapper .box-item .item-cover:hover {
+  border: 3px solid #cce2f2;
+}
+button.button {
+  background: #5d1873;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 0;
+}
+button.button:hover {
+  background: #451256;
+  border: 0;
+}
+.user-section .dropdown {
+  display: block !important;
+}
+.addtocart-button {
+  background: #5d1873 !important;
+  border: 0 !important;
+  border-radius: 4px !important;
+  font-size: 18px !important;
+  color: #fff !important;
+}
+.addtocart-button:hover {
+  background: #451256 !important;
+  border: 0;
+}
+.product-block,
+.news-block {
+  border-right: 1px solid #ddd;
+}
+.news-block .item-cover {
+  min-height: 245px;
+}
+.clear-both {
+  content: "";
+  display: block;
+  clear: both;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  margin: 22px 0 22px 0;
+}
+hr.short {
+  margin: 11px 0 11px 0;
+}
+hr.tall {
+  margin: 44px 0 44px 0;
+}
+hr.taller {
+  margin: 66px 0 66px 0;
+}
+hr.light {
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+}
+.block-title {
+  font-size: 2em;
+  margin-bottom: 20px !important;
+  color: #006eb9 !important;
+}
+/***** Social
+------------------------------------------------------------- */
+.social-links {
+  text-align: right;
+}
+.social-links .socicon {
+  font-family: 'socicon' !important;
+  font-size: 14px;
+}
+.social-links a:link,
+.social-links a:visited {
+  color: #404040;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: 0.6ms time;
+  -moz-transition: 0.6ms time;
+  -ms-transition: 0.6ms time;
+  -o-transition: 0.6ms time;
+  transition: 0.6ms time;
+}
+.social-links a:hover {
+  text-decoration: none;
+}
+.social-links a.twitter:hover {
+  background: #00BDEC;
+  color: #fff;
+}
+.social-links a.rss:hover {
+  background: #E28F2E;
+  color: #fff;
+}
+.social-links a.facebook:hover {
+  background: #3A5897;
+  color: #fff;
+}
+.social-links a.google-plus:hover {
+  background: #DD4B39;
+  color: #fff;
+}
+.social-links a.youtube:hover {
+  background: #D20800;
+  color: #fff;
+}
+.social-links span {
+  display: block;
+  margin-top: 8px;
+}
+.social-links:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/***** Toolbar
+------------------------------------------------------------- */
+.toolbar-wapper {
+  background: #f4f4f4;
+  border-bottom: 1px solid #ededed;
+  /* Toolbar Left */
+
+  /* Toolbar Right */
+
+}
+.toolbar-wapper .tb-left:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.toolbar-wapper .tb-right .moduletable .moduletable-inner ul.nav {
+  float: right;
+}
+.toolbar-wapper .tb-right .moduletable .moduletable-inner ul.nav li a i {
+  position: relative;
+}
+.toolbar-wapper .tb-right .moduletable .moduletable-inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.toolbar-wapper .tb-right:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.toolbar-wapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/***** Header
+------------------------------------------------------------- */
+.header-wapper {
+  /* Header Left */
+
+  /* Header Right */
+
+}
+.header-wapper .hd-left:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header-wapper .hd-right .moduletable .moduletable-inner {
+  margin-top: 25px;
+  text-align: right;
+}
+.header-wapper .hd-right .moduletable .moduletable-inner div.search {
+  display: inline-block;
+  margin-top: 6px;
+}
+.header-wapper .hd-right .moduletable .moduletable-inner div.search input.inputbox {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 12px;
+  width: 170px;
+  padding: 8px 15px;
+  transition: all 0.2s ease-in 0.2s;
+  color: #555;
+}
+.header-wapper .hd-right .moduletable .moduletable-inner div.search input.inputbox:focus {
+  width: 210px;
+}
+.header-wapper .hd-right .moduletable .moduletable-inner #vmCartModule {
+  height: 48px;
+  width: 48px;
+  background: url("http://www.minidsp.com/templates/vcptheme/less/../images/icon-cart.png") no-repeat left top;
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+.header-wapper .hd-right .moduletable .moduletable-inner #vmCartModule .total_products {
+  display: block;
+  font-size: 20px;
+  left: 10px;
+  position: absolute;
+  text-align: center;
+  top: 2px;
+  width: 40px;
+}
+.header-wapper .hd-right:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header-wapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/***** Show Case
+------------------------------------------------------------- */
+.showcase-wapper {
+  /* Show Case Left */
+
+  /* Show Case Right */
+
+}
+.showcase-wapper .showcase-left:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.showcase-wapper .showcase-right:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.showcase-wapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/***** Navigation
+------------------------------------------------------------- */
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav {
+  border: 0;
+  background: #2a3b55 !important;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level0 {
+  background: transparent;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level0 li {
+  background: transparent;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level0 li.haschild a.mega span.menu-title,
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level0 li.haschild-over a.mega span.menu-title {
+  background-position: right center;
+  padding-left: 0;
+  padding-right: 12px;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level0 li.mega a {
+  font-family: 'open sans', sans-serif;
+  font-weight: 400;
+  background: transparent;
+  padding: 15px 30px;
+  font-size: 14px;
+  color: #fff;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level0 li.mega a.mega {
+  border: 0;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level0 li.mega a:hover {
+  background: #000;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level0 li.mega.active a {
+  background: #006eb9;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level0 li .childcontent-inner {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level0 li .childcontent-inner .megacol {
+  border: 0px !important;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1.megamenu {
+  margin: 0;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1 li {
+  border: 0;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1 li.mega a:link,
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1 li.mega a:visited {
+  padding: 6px 8px !important;
+  margin-right: 2px !important;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1 li.mega a:hover {
+  background: #eee !important;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1 li.mega.haschild,
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1 li.mega.haschild-over {
+  background: url("http://www.minidsp.com/templates/vcptheme/less/../images/arrow.png") no-repeat right 10px center !important;
+  padding: 0;
+  position: relative;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1 li.mega.haschild .childcontent,
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1 li.mega.haschild-over .childcontent {
+  margin-left: 190px;
+  margin-top: -29px;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1 li.mega.haschild a:hover,
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1 li.mega.haschild-over a:hover {
+  background: #eeeeee url("http://www.minidsp.com/templates/vcptheme/less/../images/arrow.png") no-repeat right 10px center;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1 li.mega .group .group-title {
+  border-bottom: 1px solid #ddd;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1 li.mega .group .group-title a .menu-title {
+  color: #333 !important;
+  text-transform: none;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level1 li.mega a.mega {
+  padding: 5px 0;
+  margin: 0;
+  background: transparent;
+  color: #777 !important;
+  font-size: 12px;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level2 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level2 li a:link,
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level2 li a:visited {
+  margin-right: 2px !important;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 #js-mainnav ul.level2 li a:hover {
+  background: #eee !important;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 .navbar-brand {
+  display: none;
+}
+.mainmenu-wapper .menu-section .moduletable .moduletable-inner-123 .navbar {
+  min-height: 0 !important;
+  margin-bottom: 0 !important;
+}
+.mainmenu-wapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.navbar-vcp {
+  background: #2E0557 !important;
+}
+/***** Top Section
+------------------------------------------------------------- */
+.top-wapper {
+  /* Top A */
+
+  /* Top B */
+
+}
+.top-wapper .top-a:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.top-wapper .top-b:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.top-wapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/***** Breadcrumbs
+------------------------------------------------------------- */
+.breadcrumbs-wapper .breadcrumbs .moduletable .moduletable-inner .breadcrumb {
+  font-size: 13px;
+  margin: 0;
+  padding: 10px 0;
+  background: #fff;
+}
+.breadcrumbs-wapper .breadcrumbs .moduletable .moduletable-inner .breadcrumb .divider {
+  display: none;
+}
+.breadcrumbs-wapper .breadcrumbs:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.breadcrumbs-wapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/***** Banner
+------------------------------------------------------------- */
+.banner-wapper .banner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.banner-wapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/***** Main Site
+------------------------------------------------------------- */
+.main-wapper {
+  margin-top: 20px;
+  font-size: 13px;
+  /* Left Column */
+
+  /* Main Column */
+
+  /* Right Column */
+
+}
+.main-wapper .left-column:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-wapper .main-column {
+  /* Main Top */
+
+  /* Main Content */
+
+  /* Main Bottom */
+
+}
+.main-wapper .main-column .main-top:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-wapper .main-column .main-content {
+  min-height: 350px;
+}
+.main-wapper .main-column .main-content ul {
+  list-style-type: circle;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+.main-wapper .main-column .main-content h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #006eb9 !important;
+  border-bottom: 0;
+}
+.main-wapper .main-column .main-content #dm_header {
+  display: none;
+}
+.main-wapper .main-column .main-content #dm_cats {
+  margin-bottom: 25px;
+}
+.main-wapper .main-column .main-content #dm_cats h2.dm_title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #006eb9 !important;
+  border-bottom: 0;
+  border: 0;
+  margin-top: 0 !important;
+}
+.main-wapper .main-column .main-content .category-list {
+  margin-bottom: 20px;
+}
+.main-wapper .main-column .main-content .category-list .cat-items {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+.main-wapper .main-column .main-content .componentheading {
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #006eb9 !important;
+  border-bottom: 0;
+}
+.main-wapper .main-column .main-content #acylistslisting .acymailing_list {
+  border: 0;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.main-wapper .main-column .main-content #acylistslisting .acymailing_list .list_description {
+  padding: 10px 0;
+}
+.main-wapper .main-column .main-content .acymailing_footer {
+  display: none;
+}
+.main-wapper .main-column .main-content .user-wapper {
+  position: relative;
+  margin-bottom: 25px;
+}
+.main-wapper .main-column .main-content .user-wapper h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #000000 !important;
+  border-bottom: 0;
+}
+.main-wapper .main-column .main-content .user-wapper .form-section {
+  background: #fafafa;
+  border-radius: 4px;
+  padding: 20px;
+}
+.main-wapper .main-column .main-content .user-wapper .form-section .form-fields label {
+  display: block;
+  font-weight: 400;
+}
+.main-wapper .main-column .main-content .user-wapper .form-section .form-fields label.remember-lbl {
+  display: inline-block;
+  float: left;
+}
+.main-wapper .main-column .main-content .user-wapper .form-section .form-fields input[type="text"],
+.main-wapper .main-column .main-content .user-wapper .form-section .form-fields input[type="password"],
+.main-wapper .main-column .main-content .user-wapper .form-section .form-fields input[type="email"] {
+  width: 50%;
+  margin-bottom: 5px;
+}
+.main-wapper .main-column .main-content .user-wapper .form-section .form-fields input[type="checkbox"] {
+  float: left;
+  margin-left: 8px;
+}
+.main-wapper .main-column .main-content .user-wapper .form-section .form-fields:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-wapper .main-column .main-content .user-wapper .links {
+  padding: 0 20px 20px 20px;
+}
+.main-wapper .main-column .main-content .user-wapper .links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.main-wapper .main-column .main-content .user-wapper .links ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+.main-wapper .main-column .main-content .user-wapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-wapper .main-column .main-content .registration h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #000000 !important;
+  border-bottom: 0;
+}
+.main-wapper .main-column .main-content .registration legend {
+  display: none;
+}
+.main-wapper .main-column .main-content .item-page {
+  /*
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-bottom: 20px;
+        */
+
+}
+.main-wapper .main-column .main-content .item-page h2 {
+  font-size: 2em;
+  color: #006eb9 !important;
+}
+.main-wapper .main-column .main-content .blog .items-row,
+.main-wapper .main-column .main-content .blog .items-leading {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.main-wapper .main-column .main-content .blog .items-row h2,
+.main-wapper .main-column .main-content .blog .items-leading h2 {
+  font-size: 2em;
+  color: #006eb9 !important;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails {
+  /*
+          border: 1px solid #ddd;
+          padding: 20px;
+          */
+
+  margin-bottom: 20px;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .spacer-buy-area {
+  position: relative;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .product-fields {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .product-fields .product-field {
+  margin-bottom: 8px;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .product-fields .product-field .product-fields-title-wrapper {
+  display: inline-block;
+  min-width: 150px;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .product-fields .product-field .product-fields-title-wrapper .product-fields-title {
+  font-weight: 400;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .product-fields .product-field .product-fields-title-wrapper .product-fields-title * {
+  font-weight: 400;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .product-fields:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .product-price {
+  font-size: 24px;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .product-price * {
+  font-weight: 400;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .product-price .price-crossed {
+  display: none !important;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .product-price .PricesalesPrice {
+  display: inline-block !important;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .vote {
+  text-align: right;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .addtocart-bar {
+  margin: 0;
+  padding: 0;
+}
+.main-wapper .main-column .main-content .productdetails-view.productdetails .availability {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.main-wapper .main-column .main-content .category_description {
+  display: none;
+}
+.main-wapper .main-column .main-content .horizontal-separator {
+  background: #fff;
+}
+.main-wapper .main-column .main-content .category-view h4 {
+  color: #333;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+.main-wapper .main-column .main-content .category-view .row .category .spacer {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+  margin: 0 5px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+}
+.main-wapper .main-column .main-content .browse-view h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #006eb9 !important;
+  border-bottom: 0;
+}
+.main-wapper .main-column .main-content .browse-view .orderby-displaynumber {
+  display: none;
+}
+.main-wapper .main-column .main-content .browse-view .row .product {
+  overflow: hidden;
+}
+.main-wapper .main-column .main-content .browse-view .row .product .spacer {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+  margin: 0 5px;
+  padding: 20px;
+  position: relative;
+  max-height: 150px;
+}
+.main-wapper .main-column .main-content .browse-view .row .product.last .spacer {
+  margin: 0 0 0 10px;
+}
+.main-wapper .main-column .main-content .browse-view .row .product.first .spacer {
+  margin: 0 10px 0 0;
+}
+.main-wapper .main-column .main-content #searchForm input#search-searchword {
+  margin-top: 1px;
+}
+.main-wapper .main-column .main-content #searchForm button.btn {
+  padding: 2px 10px;
+}
+.main-wapper .main-column .main-content #searchForm LABEL {
+  display: inline-block;
+  margin-right: 15px;
+}
+.main-wapper .main-column .main-content #searchForm INPUT[type="radio"],
+.main-wapper .main-column .main-content #searchForm #searchForm INPUT[type="checkbox"] {
+  position: relative;
+  margin: 0 3px 0 0;
+  padding: 0;
+}
+.main-wapper .main-column .main-content #searchForm legend {
+  margin: 10px 0 0 0;
+}
+.main-wapper .main-column .main-content .contact h3 {
+  margin: 0;
+  padding: 0;
+}
+.main-wapper .main-column .main-content .contact .contact-form .control-label {
+  text-align: left;
+  display: inline-block;
+}
+.main-wapper .main-column .main-content .contact .contact-form .controls textarea {
+  width: 100%;
+}
+.main-wapper .main-column .main-content .contact .contact-form .form-actions {
+  margin: 10px 0;
+}
+.main-wapper .main-column .main-content .contact .contact-form .form-actions .btn-primary {
+  background: url("http://www.minidsp.com/templates/vcptheme/less/../images/bg-btn.jpg") repeat-x left top;
+  height: 39px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 4px;
+}
+.main-wapper .main-column .main-content .contact .contact-form legend,
+.main-wapper .main-column .main-content .contact .contact-form label {
+  font-size: 14px;
+  font-weight: 400;
+}
+.main-wapper .main-column .main-content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-wapper .main-column .main-bottom:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-wapper .right-column:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-wapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/***** Bottom
+------------------------------------------------------------- */
+.bottom-wapper {
+  /* Bottom A */
+
+  /* Bottom B */
+
+}
+.bottom-wapper .bottom-a:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.bottom-wapper .bottom-b:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.bottom-wapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/***** Footer
+------------------------------------------------------------- */
+.footer-wapper {
+  background: #451256;
+  padding: 30px 0;
+  color: #999;
+  font-size: 0.9em;
+  /* Footer Top */
+
+  /* Footer Bottom */
+
+}
+.footer-wapper .footer-top .moduletable .moduletable-inner ul.navbar-nav {
+  margin: 0;
+  padding: 5px 0;
+}
+.footer-wapper .footer-top .moduletable .moduletable-inner ul.navbar-nav li {
+  margin: 0;
+  padding: 0 8px;
+  border-left: 1px solid #505050;
+}
+.footer-wapper .footer-top .moduletable .moduletable-inner ul.navbar-nav li a:link,
+.footer-wapper .footer-top .moduletable .moduletable-inner ul.navbar-nav li a:visited {
+  padding: 0 0;
+  line-height: 12px;
+  color: #fff;
+}
+.footer-wapper .footer-top .moduletable .moduletable-inner ul.navbar-nav li a:hover {
+  background: none;
+  text-decoration: underline;
+}
+.footer-wapper .footer-top .moduletable .moduletable-inner ul.navbar-nav li:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+.footer-wapper .footer-top:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.footer-wapper .footer-bottom {
+  padding: 10px 0 30px 0;
+}
+.footer-wapper .footer-bottom .moduletable .moduletable-inner ul.navbar-nav {
+  margin: 0;
+  padding: 0;
+}
+.footer-wapper .footer-bottom .moduletable .moduletable-inner ul.navbar-nav li {
+  margin: 0;
+  padding: 0 15px 0 0;
+}
+.footer-wapper .footer-bottom .moduletable .moduletable-inner ul.navbar-nav li a:link,
+.footer-wapper .footer-bottom .moduletable .moduletable-inner ul.navbar-nav li a:visited {
+  padding: 0;
+  line-height: 17px;
+  color: #ccc;
+}
+.footer-wapper .footer-bottom .moduletable .moduletable-inner ul.navbar-nav li a:hover {
+  background: none;
+  text-decoration: underline;
+}
+.footer-wapper .footer-bottom .moduletable .moduletable-inner ul.navbar-nav li:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+.footer-wapper .footer-bottom .moduletable .moduletable-inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.footer-wapper .footer-bottom .moduletable .copyright {
+  float: left;
+  margin-top: 5px;
+}
+.footer-wapper .footer-bottom .moduletable .policy {
+  padding-left: 10px;
+  margin-top: 5px;
+  float: left;
+}
+.footer-wapper .footer-bottom:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.footer-wapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#vmTabSection {
+  margin-top: 25px;
+}
+#vmTabSection #vmTabContent {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-top: 0;
+}
+#vmTabSection .product-related-products {
+  border: none;
+}
+#vmTabSection .product-related-products .product-field {
+  text-align: center;
+}
+#vmTabSection .product-related-products .product-field .product-field-display {
+  display: block;
+}
+#vmTabSection .product-related-products .product-field .product-field-display a span {
+  display: block;
+  height: 0;
+}
+#vmTabSection .product-related-products .product-field .product-field-display a img {
+  margin-bottom: 5px;
+  display: inline-block;
+  width: auto;
+  height: 70px;
+}
+#vmTabSection .product-related-products:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.dm_orderby {
+  padding: 5px 10px !important;
+  height: auto !important;
+}
+#dm_details {
+  float: none !important;
+}
+#dm_details .dm_title {
+  margin-bottom: 15px !important;
+}
+#dm_details:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.dm_taskbar {
+  text-align: center;
+}
+.dm_taskbar ul {
+  float: none;
+  display: inline-block;
+}
+.dm_taskbar:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-image IMG-123 {
+  width: 100%;
+  display: inline-block;
+  max-width: 100%;
+}
+ul.nav-tabs {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+ul.nav-pills .dropdown-menu {
+  margin-top: 0 !important;
+}
+</style>
+  <link href="http://www.minidsp.com/templates/vcptheme/less/template-responsive.less" rel="stylesheet/less" type="text/css"><style id="less:templates-vcptheme-less-template-responsive" type="text/css">/** FOR MEDIA <= 800px **/
+@media only screen and (max-width: 1024px), (max-device-width: 1024px) {
+  {
+    /** FOR MEDIA 769px <=> 800px **/
+  
+    /** FOR MEDIA 641px <=> 768px **/
+  
+  }
+  .box-item {
+    margin-bottom: 15px;
+  }
+  .news-block .item-cover {
+    min-height: 0;
+  }
+  .main-wapper .container {
+    padding: 0 10px;
+  }
+  .main-wapper .main-column .main-content .browse-view .horizontal-separator {
+    display: none;
+  }
+  .main-wapper .main-column .main-content .browse-view .row .product .spacer {
+    margin: 0 0 15px 0 !important;
+  }
+  .breadcrumbs-wapper .container {
+    padding: 0 10px;
+  }
+  .footer-wapper .container {
+    padding: 0 10px;
+  }
+  .footer-wapper .footer-top .moduletable .moduletable-inner {
+    text-align: center;
+  }
+  .footer-wapper .footer-top .moduletable .moduletable-inner:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  .footer-wapper .footer-top .moduletable:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  .footer-wapper .footer-top .navbar-nav {
+    text-align: center;
+    float: none;
+  }
+  .footer-wapper .footer-top .navbar-nav li {
+    display: inline-block;
+    margin: 0;
+    float: none !important;
+  }
+  .footer-wapper .footer-top .navbar-nav li a:link,
+  .footer-wapper .footer-top .navbar-nav li a:visited {
+    padding: 0 3px;
+  }
+  .footer-wapper .footer-bottom {
+    position: relative;
+    text-align: center;
+  }
+  .footer-wapper .footer-bottom .moduletable .copyright {
+    display: inline-block;
+    float: none;
+    text-align: left;
+  }
+  .footer-wapper .footer-bottom .moduletable .policy {
+    display: block;
+    float: none;
+    padding: 5px 0;
+    text-align: center;
+  }
+  .footer-wapper .footer-bottom .moduletable .policy ul {
+    text-align: center;
+    float: none;
+  }
+  .footer-wapper .footer-bottom .moduletable .policy ul li {
+    display: inline-block;
+    float: none;
+  }
+  .footer-wapper .footer-bottom .moduletable.social-links {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer-wapper .footer-bottom .moduletable.social-links .moduletable-inner {
+    display: inline-block;
+  }
+  .footer-wapper .footer-bottom .moduletable.social-links .moduletable-inner a:link,
+  .footer-wapper .footer-bottom .moduletable.social-links .moduletable-inner a:visited {
+    height: 20px;
+    width: 20px;
+  }
+  .footer-wapper .footer-bottom .moduletable.social-links .moduletable-inner .socicon {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 1024px) and only screen and (min-width: 769px) and (max-width: 800px), (max-device-width: 1024px) and only screen and (min-width: 769px) and (max-width: 800px), only screen and (max-width: 1024px) and (min-device-width: 769px) and (max-device-width: 800px), (max-device-width: 1024px) and (min-device-width: 769px) and (max-device-width: 800px) {
+  
+}
+@media only screen and (max-width: 1024px) and only screen and (min-width: 641px) and (max-width: 768px), (max-device-width: 1024px) and only screen and (min-width: 641px) and (max-width: 768px), only screen and (max-width: 1024px) and (min-device-width: 641px) and (max-device-width: 768px), (max-device-width: 1024px) and (min-device-width: 641px) and (max-device-width: 768px) {
+  
+}
+/** FOR MEDIA <= 640px **/
+@media only screen and (max-width: 640px), (max-device-width: 640px) {
+  .tb-right .moduletable-inner {
+    text-align: center;
+  }
+  .tb-right .moduletable-inner ul.nav {
+    display: inline-block !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    vertical-align: bottom;
+  }
+  .tb-right .moduletable-inner ul.nav li {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+  .header-wapper .hd-left .moduletable-inner {
+    text-align: center;
+  }
+  .header-wapper .hd-right {
+    padding: 0 10px;
+  }
+  .header-wapper .hd-right .moduletable .moduletable-inner {
+    margin: 0;
+    padding: 0;
+  }
+  .header-wapper .hd-right .moduletable .moduletable-inner div.search {
+    display: block;
+  }
+  .header-wapper .hd-right .moduletable .moduletable-inner div.search input.inputbox {
+    width: 100%;
+  }
+  .header-wapper .hd-right .moduletable .moduletable-inner div.search input.inputbox:focus {
+    width: 100%;
+  }
+  .mainmenu-wapper .menu-section .moduletable .moduletable-inner .navbar-vcp {
+    background: #2a3b55;
+    border: 0;
+    box-shadow: none;
+  }
+  .mainmenu-wapper .menu-section .moduletable .moduletable-inner .navbar-vcp .navbar-header {
+    padding: 0 10px;
+  }
+  .mainmenu-wapper .menu-section .moduletable .moduletable-inner .navbar-vcp .navbar-header .navbar-brand {
+    display: block;
+    color: #ddd;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .mainmenu-wapper .menu-section .moduletable .moduletable-inner .navbar-vcp .navbar-collapse .navbar-nav {
+    margin: 0;
+    padding: 0;
+    background: #ddd;
+    max-height: none;
+  }
+  .mainmenu-wapper .menu-section .moduletable .moduletable-inner .navbar-vcp .navbar-collapse .navbar-nav .dropdown .dropdown-menu {
+    margin: 0;
+    padding: 0;
+  }
+  .mainmenu-wapper .menu-section .moduletable .moduletable-inner .navbar-vcp .navbar-collapse .navbar-nav .dropdown .dropdown-menu > li a {
+    font-weight: bold;
+  }
+  .mainmenu-wapper .menu-section .moduletable .moduletable-inner .navbar-vcp .navbar-collapse .navbar-nav .dropdown .dropdown-menu.multi-level li a {
+    font-weight: normal;
+  }
+  .main-wapper .container {
+    padding: 0 10px;
+  }
+  .footer-wapper .container {
+    padding: 0 10px;
+  }
+  .footer-wapper .footer-top .navbar-nav {
+    text-align: center;
+  }
+  .footer-wapper .footer-top .navbar-nav li {
+    display: inline-block;
+    margin: 0;
+  }
+  .footer-wapper .footer-top .navbar-nav li a:link,
+  .footer-wapper .footer-top .navbar-nav li a:visited {
+    padding: 0 3px;
+  }
+  .footer-wapper .footer-bottom {
+    position: relative;
+    text-align: center;
+  }
+  .footer-wapper .footer-bottom .moduletable .copyright {
+    display: inline-block;
+    float: none;
+    text-align: left;
+  }
+  .footer-wapper .footer-bottom .moduletable .policy {
+    display: block;
+    float: none;
+    padding: 5px 0;
+  }
+  .footer-wapper .footer-bottom .moduletable .policy ul {
+    text-align: center;
+  }
+  .footer-wapper .footer-bottom .moduletable .policy ul li {
+    display: inline-block;
+  }
+  .footer-wapper .footer-bottom .moduletable.social-links {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer-wapper .footer-bottom .moduletable.social-links .moduletable-inner {
+    display: inline-block;
+  }
+  .footer-wapper .footer-bottom .moduletable.social-links .moduletable-inner a:link,
+  .footer-wapper .footer-bottom .moduletable.social-links .moduletable-inner a:visited {
+    height: 20px;
+    width: 20px;
+  }
+  .footer-wapper .footer-bottom .moduletable.social-links .moduletable-inner .socicon {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 640px) and (min-width: 481px) and (max-width: 640px), (max-device-width: 640px) and (min-width: 481px) and (max-width: 640px) {
+  .nav-tabs li {
+    float: none !important;
+  }
+  .nav-tabs li a {
+    border: 1px solid #ddd;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 640px) and (min-width: 321px) and (max-width: 480px), (max-device-width: 640px) and (min-width: 321px) and (max-width: 480px) {
+  .nav-tabs li {
+    float: none !important;
+  }
+  .nav-tabs li a {
+    border: 1px solid #ddd;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 640px) and (min-width: 240px) and (max-width: 320px), (max-device-width: 640px) and (min-width: 240px) and (max-width: 320px) {
+  .nav-tabs li {
+    float: none !important;
+  }
+  .nav-tabs li a {
+    border: 1px solid #ddd;
+    margin: 0;
+  }
+  .footer-wapper {
+    font-size: 10px;
+  }
+  .footer-wapper .footer-top .navbar-nav li a:link,
+  .footer-wapper .footer-top .navbar-nav li a:visited {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .footer-wapper .footer-bottom .moduletable .copyright {
+    text-align: right;
+  }
+}
+</style>
+  <link href="http://www.minidsp.com/templates/vcptheme/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="UMIK-1%20%7C%20MiniDSP_files/vmsite-ltr.css" type="text/css">
+  <link rel="stylesheet" href="UMIK-1%20%7C%20MiniDSP_files/facebox.css" type="text/css">
+  <link rel="stylesheet" href="UMIK-1%20%7C%20MiniDSP_files/modal.css" type="text/css">
+  <link rel="stylesheet" href="UMIK-1%20%7C%20MiniDSP_files/jquery.css" type="text/css">
+  <link rel="stylesheet" href="UMIK-1%20%7C%20MiniDSP_files/dropdown_menu_left.css" type="text/css">
+  <link rel="stylesheet" href="UMIK-1%20%7C%20MiniDSP_files/style.css" type="text/css">
+  <link rel="stylesheet" href="UMIK-1%20%7C%20MiniDSP_files/styles.css" type="text/css">
+  <link rel="stylesheet" href="UMIK-1%20%7C%20MiniDSP_files/style-h.css" type="text/css">
+  <script src="UMIK-1%20%7C%20MiniDSP_files/mootools-core.js" type="text/javascript"></script>
+  <script src="UMIK-1%20%7C%20MiniDSP_files/core.js" type="text/javascript"></script>
+  <script src="UMIK-1%20%7C%20MiniDSP_files/modal.js" type="text/javascript"></script>
+  <script src="UMIK-1%20%7C%20MiniDSP_files/jquery.js" type="text/javascript"></script>
+  <script src="UMIK-1%20%7C%20MiniDSP_files/jquerynoconflict.js" type="text/javascript"></script>
+  <script src="UMIK-1%20%7C%20MiniDSP_files/vmsite.js" type="text/javascript"></script>
+  <script src="UMIK-1%20%7C%20MiniDSP_files/facebox.js" type="text/javascript"></script>
+  <script src="UMIK-1%20%7C%20MiniDSP_files/vmprices.js" type="text/javascript"></script>
+  <script src="UMIK-1%20%7C%20MiniDSP_files/jquery_002.js" type="text/javascript"></script>
+  
+  <script src="UMIK-1%20%7C%20MiniDSP_files/bootstrap.js" type="text/javascript"></script>
+  <script src="UMIK-1%20%7C%20MiniDSP_files/less-1.js" type="text/javascript"></script>
+  <script src="UMIK-1%20%7C%20MiniDSP_files/mootools-more.js" type="text/javascript"></script>
+  <script src="UMIK-1%20%7C%20MiniDSP_files/dropdown_menu.js" type="text/javascript"></script>
+  <script type="text/javascript">/* CloudFlare analytics upgrade */
+</script>
+
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="/templates/vcptheme/js/html5shiv.js"></script>
+  <script src="/templates/vcptheme/js/respond.min.js"></script>
+  <![endif]-->
+
+  
+  <script type="text/javascript">
+    jQuery(document).ready(function () {
+      // Repair Paging
+      jQuery('.pagination').find('.pagination-list').addClass('pagination');
+
+      jQuery('.pagination').find('a i.icon-first').addClass('glyphicon glyphicon-fast-backward');
+      jQuery('.pagination').find('a i.icon-previous').addClass('glyphicon glyphicon-chevron-left');
+
+      jQuery('.pagination').find('a i.icon-last').addClass('glyphicon glyphicon-fast-forward');
+      jQuery('.pagination').find('a i.icon-next').addClass('glyphicon glyphicon-chevron-right');
+    });
+  </script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-11052962-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+
+<body style="-moz-user-select: text;" class="internal umik-1 "><script type="text/javascript">
+//<![CDATA[
+try{(function(a){var b="http://",c="www.minidsp.com",d="/cdn-cgi/cl/",e="img.gif",f=new a;f.src=[b,c,d,e].join("")})(Image)}catch(e){}
+//]]>
+</script>
+<div class="page-wapper">
+<!-- toolbar-wapper -->
+  <div class="toolbar-wapper">
+    
+          <div class="container">
+        <div class="row">
+          <div class="tb-right">
+                <div class="moduletable">
+      <div class="moduletable-inner">
+                <div class="user-section">
+  <ul class="nav nav-pills">
+          <li><a href="http://www.minidsp.com/component/users/?view=login"><i class="glyphicon glyphicon-log-in"></i>&nbsp;Login</a></li>
+      <li><a href="http://www.minidsp.com/component/users/?view=registration"><i class="glyphicon glyphicon-user"></i>&nbsp;Register</a></li>
+      </ul>
+</div>      </div>
+    </div>
+  
+          </div>
+        </div>
+      </div>
+      </div>
+  <!-- !toolbar-wapper -->
+
+  <!-- header-wapper -->
+  <header class="header-wapper">
+    <div class="container">
+      <div class="row">
+                  <div class="col-sm-6 hd-left">
+                <div class="moduletable">
+      <div class="moduletable-inner">
+                <p><a href="http://www.minidsp.com/"><img alt="logo" src="UMIK-1%20%7C%20MiniDSP_files/logo.png"></a></p>      </div>
+    </div>
+  
+          </div>
+        
+                  <div class="col-sm-6 hd-right">
+                <div class="moduletable col-xs-10">
+      <div class="moduletable-inner">
+                <!--BEGIN Search Box -->
+<form action="/products/search" method="get">
+  <div class="search">
+    <input name="keyword" id="mod_virtuemart_search" maxlength="20" alt="Search" class="inputbox" size="20" value="Search..." onblur="if(this.value=='') this.value='Search...';" onfocus="if(this.value=='Search...') this.value='';" type="text">  </div>
+  <input name="limitstart" value="0" type="hidden">
+  <input name="option" value="com_virtuemart" type="hidden">
+  <input name="view" value="category" type="hidden">
+</form>
+
+<!-- End Search Box -->
+      </div>
+    </div>
+      <div class="moduletable col-xs-2">
+      <div class="moduletable-inner">
+                
+<!-- Virtuemart 2 Ajax Card -->
+<div class="vmCartModule" id="vmCartModule">
+
+  
+  <a href="http://www.minidsp.com/products/cart">
+    <div class="total" style="float: right;">
+          </div>
+    <div class="total_products">0</div>
+    <div class="show_cart">
+          </div>
+  </a>
+
+  <div style="clear:both;"></div>
+
+  <noscript>
+    Please wait  </noscript>
+</div>
+
+      </div>
+    </div>
+  
+          </div>
+              </div>
+    </div>
+  </header>
+  <!-- !header-wapper -->
+
+  <!-- Main Menu -->
+  <div class="mainmenu-wapper">
+    <div class="container">
+      <div class="row">
+        <div class="menu-section">
+              <div class="moduletable hidden-xs">
+      <div class="moduletable-inner">
+                <div id="js-mainnav" class="wrap clearfix">
+	<div class="js-megamenu clearfix" id="js-meganav">
+<ul class="megamenu level0"><li class="mega first"><a href="http://www.minidsp.com/" class="mega first" id="menu101"><span class="menu-title">Home</span></a></li><li class="mega haschild active"><a href="http://www.minidsp.com/products" class="mega haschild active" id="menu198"><span class="menu-title">Products</span></a><div style="width: 810px; height: 725px;" class="childcontent cols4 ">
+<div style="width: 800px;" class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 800px;"><div class="megacol column1 first" style="width: 198px;"><ul class="megamenu level1"><li class="mega first group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/products/minidspkits" class="mega first group" id="menu199"><span class="menu-title">MiniDSP Kits</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/products/minidspkits/2-x-in-4-x-out" class="mega first" id="menu201"><span class="menu-title">2 x In, 4 x Out</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/minidspkits/2-x-in-4-x-out-bal" class="mega" id="menu297"><span class="menu-title">2 x In, 4 x Out Bal</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/minidspkits/2-x-in-8-x-out" class="mega" id="menu202"><span class="menu-title">2 x In, 8 x Out</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/minidspkits/8-x-in-8-x-out" class="mega" id="menu203"><span class="menu-title">8 x In, 8 x Out</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/minidspkits/nanodigi-2x8-k" class="mega" id="menu208"><span class="menu-title">nanoDIGI 2x8 K</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/minidspkits/minisharc-kit" class="mega" id="menu209"><span class="menu-title">miniSHARC Kit</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/minidspkits/minidigi" class="mega" id="menu211"><span class="menu-title">miniDIGI</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/minidspkits/digi-fp" class="mega" id="menu204"><span class="menu-title">DIGI-FP</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/minidspkits/vol-fp" class="mega" id="menu205"><span class="menu-title">VOL-FP</span></a></li><li class="mega last"><a href="http://www.minidsp.com/products/minidspkits/curryman-i2s-dac" class="mega last" id="menu333"><span class="menu-title">Curryman I2S DAC</span></a></li></ul></div></div></li><li class="mega group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/products/minidsp-in-a-box" class="mega group" id="menu206"><span class="menu-title">miniDSP in a Box</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4" class="mega first" id="menu266"><span class="menu-title">miniDSP 2x4</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/minidsp-in-a-box/minidsp-balanced-2x4" class="mega" id="menu267"><span class="menu-title">miniDSP Balanced 2x4</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/minidsp-in-a-box/minidsp-4x10-hd" class="mega" id="menu268"><span class="menu-title">miniDSP 4x10 Hd</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/minidsp-in-a-box/minidsp-10x10-hd" class="mega" id="menu269"><span class="menu-title">miniDSP 10x10 Hd</span></a></li><li class="mega last"><a href="http://www.minidsp.com/products/minidsp-in-a-box/nanodigi-2x8-b" class="mega last" id="menu270"><span class="menu-title">nanoDIGI 2x8 B</span></a></li></ul></div></div></li><li class="mega"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/products/plugins" class="mega" id="menu271"><span class="menu-title">Audio plug-ins</span></a></div></div></li></ul></div><div class="megacol column2" style="width: 200px;"><ul class="megamenu level1"><li class="mega first group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/products/dirac-series" class="mega first group" id="menu359"><span class="menu-title">Dirac Series</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/products/dirac-series/product-line-summary" class="mega first" id="menu392"><span class="menu-title">Product line summary</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/dirac-series/ddrc-22a" class="mega" id="menu393"><span class="menu-title">DDRC-22A</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/dirac-series/ddrc-22d" class="mega" id="menu394"><span class="menu-title">DDRC-22D</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/dirac-series/ddrc-22da" class="mega" id="menu395"><span class="menu-title">DDRC-22DA</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/dirac-series/ddrc-88a" class="mega" id="menu410"><span class="menu-title">DDRC-88A</span></a></li><li class="mega last"><a href="http://www.minidsp.com/products/dirac-series/opendrc-to-ddrc-upgrade" class="mega last" id="menu405"><span class="menu-title">OpenDRC to DDRC upgrade</span></a></li></ul></div></div></li><li class="mega group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/products/ht-series" class="mega group" id="menu384"><span class="menu-title">HomeTheater Series</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/products/ht-series/product-line-summary" class="mega first" id="menu398"><span class="menu-title">Product line summary</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/ht-series/nanoavr-hd" class="mega" id="menu396"><span class="menu-title">nanoAVR-HD</span></a></li><li class="mega last"><a href="http://www.minidsp.com/products/ht-series/nanoavr-dl" class="mega last" id="menu397"><span class="menu-title">nanoAVR-DL Dirac Live</span></a></li></ul></div></div></li><li class="mega group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/products/opendrc-series" class="mega group" id="menu272"><span class="menu-title">OpenDRC series</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/products/opendrc-series/summary-table" class="mega first" id="menu273"><span class="menu-title">Summary table</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/opendrc-series/opendrc-di" class="mega" id="menu274"><span class="menu-title">OpenDRC-DI</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/opendrc-series/opendrc-an" class="mega" id="menu275"><span class="menu-title">OpenDRC-AN</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/opendrc-series/opendrc-da" class="mega" id="menu380"><span class="menu-title">OpenDRC-DA</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/opendrc-series/opendrc-plug-ins" class="mega" id="menu276"><span class="menu-title">OpenDRC plug-ins</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/opendrc-series/minisharc-kit" class="mega" id="menu277"><span class="menu-title">miniSHARC kit</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/opendrc-series/an-fp" class="mega" id="menu334"><span class="menu-title">AN-FP</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/opendrc-series/digi-fp" class="mega" id="menu361"><span class="menu-title">DIGI-FP</span></a></li><li class="mega last"><a href="http://www.minidsp.com/products/opendrc-series/da-fp" class="mega last" id="menu408"><span class="menu-title">DA-FP</span></a></li></ul></div></div></li></ul></div><div class="megacol column3" style="width: 200px;"><ul class="megamenu level1"><li class="mega first group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/products/plate-amplifiers" class="mega first group" id="menu278"><span class="menu-title">Plate Amplifiers</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/products/plate-amplifiers/pwr-ice-series" class="mega first" id="menu360"><span class="menu-title">PWR-ICE Series</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/plate-amplifiers/pwr-ice125" class="mega" id="menu322"><span class="menu-title">PWR-ICE125</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/plate-amplifiers/pwr-ice250" class="mega" id="menu358"><span class="menu-title">PWR-ICE250</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/plate-amplifiers/pwr-ice125wd" class="mega" id="menu407"><span class="menu-title">PWR-ICE125WD</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/plate-amplifiers/pwr-dsp-products" class="mega" id="menu279"><span class="menu-title">PWR-DSP products</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/plate-amplifiers/pwr-dsp1" class="mega" id="menu280"><span class="menu-title">PWR-DSP1</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/plate-amplifiers/pwr-dsp2" class="mega" id="menu281"><span class="menu-title">PWR-DSP2</span></a></li><li class="mega last"><a href="http://www.minidsp.com/products/plate-amplifiers/pwr-dsp3" class="mega last" id="menu282"><span class="menu-title">PWR-DSP3</span></a></li></ul></div></div></li><li class="mega group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/products/usb-audio-interface" class="mega group" id="menu283"><span class="menu-title">USB Audio Interface</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/products/usb-audio-interface/usbstreamer" class="mega first" id="menu284"><span class="menu-title">USBStreamer</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/usb-audio-interface/usbstreamer-box" class="mega" id="menu336"><span class="menu-title">USBStreamer Box</span></a></li><li class="mega last"><a href="http://www.minidsp.com/products/usb-audio-interface/ministreamer" class="mega last" id="menu285"><span class="menu-title">miniStreamer</span></a></li></ul></div></div></li><li class="mega group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/products/acoustic-measurement" class="mega group" id="menu289"><span class="menu-title">Acoustic Measurement</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first active"><a href="http://www.minidsp.com/products/acoustic-measurement/umik-1" class="mega first active" id="menu290"><span class="menu-title">UMIK-1</span></a></li></ul></div></div></li></ul></div><div class="megacol column4 last" style="width: 200px;"><ul class="megamenu level1"><li class="mega first group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/products/headphone-amp" class="mega first group" id="menu411"><span class="menu-title">Headphone Amp</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/products/headphone-amp/everamp" class="mega first" id="menu412"><span class="menu-title">everAMP</span></a></li></ul></div></div></li><li class="mega group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/products/accessories" class="mega group" id="menu286"><span class="menu-title">Accessories</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/products/accessories/minidc-isolator" class="mega first" id="menu287"><span class="menu-title">miniDC Isolator</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/accessories/misc-accessories" class="mega" id="menu288"><span class="menu-title">Misc Accessories</span></a></li><li class="mega last"><a href="http://www.minidsp.com/products/accessories/rack-mount-box-2x8-8x8" class="mega last" id="menu350"><span class="menu-title">Rack mount box (2x8/8x8)</span></a></li></ul></div></div></li><li class="mega group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/products/network-audio" class="mega group" id="menu401"><span class="menu-title">Network audio</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/products/network-audio/avb-dg" class="mega first" id="menu402"><span class="menu-title">AVB-DG</span></a></li><li class="mega"><a href="http://www.minidsp.com/products/network-audio/avb-sw" class="mega" id="menu403"><span class="menu-title">AVB-SW</span></a></li><li class="mega last"><a href="http://www.minidsp.com/products/network-audio/avb-dgk" class="mega last" id="menu404"><span class="menu-title">AVB-DGK</span></a></li></ul></div></div></li></ul></div></div>
+</div></div></li><li class="mega haschild"><a href="http://www.minidsp.com/applications" class="mega haschild" id="menu212"><span class="menu-title">Applications</span></a><div style="width: 810px; height: 696px;" class="childcontent cols4 ">
+<div style="width: 800px;" class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 800px;"><div class="megacol column1 first" style="width: 198px;"><ul class="megamenu level1"><li class="mega first group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/applications/dsp-basics" class="mega first group" id="menu298"><span class="menu-title">DSP basics</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/applications/dsp-basics/minidsp-concept" class="mega first" id="menu303"><span class="menu-title">miniDSP Concept</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/dsp-basics/system-equalization" class="mega" id="menu301"><span class="menu-title">System Equalization</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/dsp-basics/peq-vs-graphic-eq" class="mega" id="menu300"><span class="menu-title">PEQ vs Graphic EQ</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/dsp-basics/gain-structure-101" class="mega" id="menu302"><span class="menu-title">Gain Structure 101</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/dsp-basics/fir-vs-iir-filtering" class="mega" id="menu299"><span class="menu-title">FIR vs IIR filtering</span></a></li><li class="mega last"><a href="http://www.minidsp.com/applications/dsp-basics/time-alignment" class="mega last" id="menu314"><span class="menu-title">Time alignment</span></a></li></ul></div></div></li><li class="mega group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/applications/digital-crossovers" class="mega group" id="menu213"><span class="menu-title">Digital Crossovers</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/applications/digital-crossovers/digital-crossover-basics" class="mega first" id="menu214"><span class="menu-title">Digital Crossover basics</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/digital-crossovers/stereo-2-way-xover" class="mega" id="menu215"><span class="menu-title">Stereo 2 Way Xover</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/digital-crossovers/stereo-34way-xover" class="mega" id="menu216"><span class="menu-title">Stereo 3/4way Xover</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/digital-crossovers/subwoofer-integration-with-minidsp" class="mega" id="menu323"><span class="menu-title">Subwoofer integration with miniDSP</span></a></li><li class="mega last"><a href="http://www.minidsp.com/applications/digital-crossovers/opendrc-as-fir-tool" class="mega last" id="menu354"><span class="menu-title">OpenDRC as FIR tool</span></a></li></ul></div></div></li><li class="mega group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/applications/digital-room-correction" class="mega group" id="menu217"><span class="menu-title">Digital Room Correction</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/applications/digital-room-correction/drc-basics" class="mega first" id="menu218"><span class="menu-title">DRC basics</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/digital-room-correction/dirac-series-getting-started" class="mega" id="menu368"><span class="menu-title">Dirac series</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/digital-room-correction/acouratedrc" class="mega" id="menu219"><span class="menu-title">AcourateDRC</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/digital-room-correction/dirac-live-setup" class="mega" id="menu352"><span class="menu-title">Dirac Live setup</span></a></li><li class="mega last"><a href="http://www.minidsp.com/applications/digital-room-correction/align2" class="mega last" id="menu329"><span class="menu-title">Align2</span></a></li></ul></div></div></li></ul></div><div class="megacol column2" style="width: 200px;"><ul class="megamenu level1"><li class="mega first group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/applications/home-theater-tuning" class="mega first group" id="menu355"><span class="menu-title">Home Theater tuning</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/applications/home-theater-tuning/equalization-with-nanoavr" class="mega first" id="menu356"><span class="menu-title">Equalization with nanoAVR</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/home-theater-tuning/bass-management" class="mega" id="menu357"><span class="menu-title">Bass management with nanoAVR</span></a></li><li class="mega last"><a href="http://www.minidsp.com/applications/home-theater-tuning/surround-equalization-with-10x10hd" class="mega last" id="menu369"><span class="menu-title">Surround equalization with 10x10HD</span></a></li></ul></div></div></li><li class="mega group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/applications/plate-amplifiers" class="mega group" id="menu347"><span class="menu-title">Plate amplifiers</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/applications/plate-amplifiers/pwr-ice-for-subwoofer" class="mega first" id="menu348"><span class="menu-title">PWR-ICE for Subwoofer</span></a></li><li class="mega last"><a href="http://www.minidsp.com/applications/plate-amplifiers/pwr-ice-for-2way-speaker" class="mega last" id="menu349"><span class="menu-title">PWR-ICE for 2way speaker</span></a></li></ul></div></div></li><li class="mega group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/applications/auto-eq-with-rew" class="mega group" id="menu221"><span class="menu-title">Auto EQ with REW</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/applications/auto-eq-with-rew/rew-autoeq-step-by-step" class="mega first" id="menu406"><span class="menu-title">REW AutoEQ step by step</span></a></li></ul></div></div></li></ul></div><div class="megacol column3" style="width: 200px;"><ul class="megamenu level1"><li class="mega first group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/applications/powered-by-minidsp" class="mega first group" id="menu229"><span class="menu-title">Powered by miniDSP</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/applications/powered-by-minidsp/linkwitz-lab-lx521" class="mega first" id="menu319"><span class="menu-title">Linkwitz Lab LX521</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/powered-by-minidsp/linkwitz-lab-lxmini" class="mega" id="menu377"><span class="menu-title">Linkwitz Lab LXmini</span></a></li><li class="mega last"><a href="http://www.minidsp.com/applications/powered-by-minidsp/nao-note-ii-rs" class="mega last" id="menu320"><span class="menu-title">NaO Note II RS</span></a></li></ul></div></div></li><li class="mega group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/applications/advanced-tools" class="mega group" id="menu222"><span class="menu-title">Advanced Tools</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/applications/advanced-tools/advanced-biquad-programming" class="mega first" id="menu223"><span class="menu-title">Advanced Biquad Programming</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/advanced-tools/linkwitz-transform" class="mega" id="menu224"><span class="menu-title">Linkwitz Transform</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/advanced-tools/rephase-fir-tool" class="mega" id="menu227"><span class="menu-title">rePhase FIR Tool</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/advanced-tools/active-crossover-designer" class="mega" id="menu225"><span class="menu-title">Active Crossover Designer</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/advanced-tools/python-open-room-correction" class="mega" id="menu226"><span class="menu-title">Python Open Room Correction</span></a></li><li class="mega last"><a href="http://www.minidsp.com/applications/advanced-tools/fir-filter-tools" class="mega last" id="menu318"><span class="menu-title">FIR Filter tools</span></a></li></ul></div></div></li><li class="mega"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/applications/project-gallery" class="mega" id="menu228"><span class="menu-title">Project Gallery</span></a></div></div></li></ul></div><div class="megacol column4 last" style="width: 200px;"><ul class="megamenu level1"><li class="mega first group"><div class="group"><div class="group-title"><a href="http://www.minidsp.com/applications/acoustic-measurements" class="mega first group" id="menu325"><span class="menu-title">Acoustic Measurements</span></a></div><div class="group-content"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/applications/acoustic-measurements/umik-1-setup-with-rew" class="mega first" id="menu324"><span class="menu-title">UMIK-1 setup with REW</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/acoustic-measurements/loudspeaker-measurements" class="mega" id="menu328"><span class="menu-title">Loudspeaker measurements</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/acoustic-measurements/acoustic-measurements" class="mega" id="menu339"><span class="menu-title">Acoustic measurements</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/acoustic-measurements/umik-1-setup-with-dirac-rcs" class="mega" id="menu351"><span class="menu-title">UMIK-1 setup with Dirac RCS</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/acoustic-measurements/umik-1-setup-with-amarra" class="mega" id="menu335"><span class="menu-title">UMIK-1 setup with Amarra</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/acoustic-measurements/umik-1-hdmi-on-windows" class="mega" id="menu338"><span class="menu-title">UMIK-1 + HDMI on Windows</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/acoustic-measurements/umik-1-hdmi-on-mac" class="mega" id="menu337"><span class="menu-title">UMIK-1 + HDMI on Mac</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/acoustic-measurements/using-the-umik-1-with-audiotools-on-ipad" class="mega" id="menu373"><span class="menu-title">Using the Umik-1 with Audiotools on Ipad</span></a></li><li class="mega"><a href="http://www.minidsp.com/applications/acoustic-measurements/using-the-umik-1-with-smaart-on-ipad" class="mega" id="menu374"><span class="menu-title">Using the Umik-1 with Smaart on Ipad</span></a></li><li class="mega last"><a href="http://www.minidsp.com/applications/acoustic-measurements/using-the-umik-1-with-signalpro-on-ipad" class="mega last" id="menu375"><span class="menu-title">Using the Umik-1 with Signalscope Pro on Ipad</span></a></li></ul></div></div></li></ul></div></div>
+</div></div></li><li class="mega haschild"><a href="http://www.minidsp.com/support" class="mega haschild" id="menu231"><span class="menu-title">Support</span></a><div style="width: 210px; height: 175px;" class="childcontent cols1 ">
+<div style="width: 200px;" class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/support/forum" class="mega first" id="menu232"><span class="menu-title">Forum</span></a></li><li class="mega"><a href="http://www.minidsp.com/support/downloads" class="mega" id="menu233"><span class="menu-title">Downloads</span></a></li><li class="mega"><a href="http://www.minidsp.com/support/userdownloads" class="mega" id="menu409"><span class="menu-title">User Downloads</span></a></li><li class="mega"><a href="http://www.minidsp.com/support/community-powered-tutorials" class="mega" id="menu331"><span class="menu-title">Community Powered Tutorials</span></a></li><li class="mega last"><a href="https://minidsp.desk.com/" class="mega last" id="menu372"><span class="menu-title">Contact us - FAQ</span></a></li></ul></div></div>
+</div></div></li><li class="mega last haschild"><a href="http://www.minidsp.com/aboutus" class="mega last haschild" id="menu236"><span class="menu-title">Company</span></a><div style="width: 210px; height: 237px;" class="childcontent cols1 ">
+<div style="width: 200px;" class="childcontent-inner-wrap">
+<div class="childcontent-inner clearfix" style="width: 200px;"><div class="megacol column1 first" style="width: 200px;"><ul class="megamenu level1"><li class="mega first"><a href="http://www.minidsp.com/aboutus/news" class="mega first" id="menu237"><span class="menu-title">News</span></a></li><li class="mega"><a href="http://www.minidsp.com/aboutus/aboutus" class="mega" id="menu238"><span class="menu-title">About us</span></a></li><li class="mega"><a href="http://www.minidsp.com/aboutus/minidsp-blog" class="mega" id="menu321"><span class="menu-title">miniDSP Blog</span></a></li><li class="mega"><a href="http://www.minidsp.com/aboutus/minidsp-dealers" class="mega" id="menu241"><span class="menu-title">miniDSP dealers</span></a></li><li class="mega"><a href="http://www.minidsp.com/aboutus/press-reviews" class="mega" id="menu239"><span class="menu-title">Press Reviews</span></a></li><li class="mega"><a href="http://www.minidsp.com/aboutus/newsletter" class="mega" id="menu240"><span class="menu-title">Company's Newsletters</span></a></li><li class="mega last"><a href="http://www.minidsp.com/aboutus/terms-and-conditions" class="mega last" id="menu242"><span class="menu-title">Terms and Conditions</span></a></li></ul></div></div>
+</div></div></li></ul>
+</div>		<script type="text/javascript">
+		var megamenu = new jsMegaMenuMoo ('js-meganav', {
+			'bgopacity': 0,
+			'delayHide': 300,
+			'slide': 0,
+			'fading': 0,
+			'direction':'down',
+			'action':'mouseenter',
+			'tips': false,
+			'duration': 300		});
+		</script>
+		</div>      </div>
+    </div>
+      <div class="moduletable">
+      <div class="moduletable-inner">
+                <div class="navbar navbar-vcp" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">MENU</a>
+  </div>
+
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav  visible-xs-block">
+      <li class="item-101 first">    <a href="http://www.minidsp.com/">Home </a>
+    </li><li class="item-198 active deeper dropdown parent">    <a class="dropdown-toggle" data-toggle="dropdown" href="http://www.minidsp.com/products">Products <b class="caret"></b></a>
+    <ul class="dropdown-menu "><li class="item-199 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/products/minidspkits">MiniDSP Kits </a>
+    <ul class="dropdown-menu multi-level"><li class="item-201">    <a href="http://www.minidsp.com/products/minidspkits/2-x-in-4-x-out">2 x In, 4 x Out </a>
+    </li><li class="item-297">    <a href="http://www.minidsp.com/products/minidspkits/2-x-in-4-x-out-bal">2 x In, 4 x Out Bal </a>
+    </li><li class="item-202">    <a href="http://www.minidsp.com/products/minidspkits/2-x-in-8-x-out">2 x In, 8 x Out </a>
+    </li><li class="item-203">    <a href="http://www.minidsp.com/products/minidspkits/8-x-in-8-x-out">8 x In, 8 x Out </a>
+    </li><li class="item-208">    <a href="http://www.minidsp.com/products/minidspkits/nanodigi-2x8-k">nanoDIGI 2x8 K </a>
+    </li><li class="item-209">    <a href="http://www.minidsp.com/products/minidspkits/minisharc-kit">miniSHARC Kit </a>
+    </li><li class="item-211">    <a href="http://www.minidsp.com/products/minidspkits/minidigi">miniDIGI </a>
+    </li><li class="item-204">    <a href="http://www.minidsp.com/products/minidspkits/digi-fp">DIGI-FP </a>
+    </li><li class="item-205">    <a href="http://www.minidsp.com/products/minidspkits/vol-fp">VOL-FP </a>
+    </li><li class="item-333">    <a href="http://www.minidsp.com/products/minidspkits/curryman-i2s-dac">Curryman I2S DAC </a>
+    </li></ul></li><li class="item-206 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/products/minidsp-in-a-box">miniDSP in a Box </a>
+    <ul class="dropdown-menu multi-level"><li class="item-266">    <a href="http://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4">miniDSP 2x4 </a>
+    </li><li class="item-267">    <a href="http://www.minidsp.com/products/minidsp-in-a-box/minidsp-balanced-2x4">miniDSP Balanced 2x4 </a>
+    </li><li class="item-268">    <a href="http://www.minidsp.com/products/minidsp-in-a-box/minidsp-4x10-hd">miniDSP 4x10 Hd </a>
+    </li><li class="item-269">    <a href="http://www.minidsp.com/products/minidsp-in-a-box/minidsp-10x10-hd">miniDSP 10x10 Hd </a>
+    </li><li class="item-270">    <a href="http://www.minidsp.com/products/minidsp-in-a-box/nanodigi-2x8-b">nanoDIGI 2x8 B </a>
+    </li></ul></li><li class="item-271">    <a href="http://www.minidsp.com/products/plugins">Audio plug-ins </a>
+    </li><li class="item-359 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/products/dirac-series">Dirac Series </a>
+    <ul class="dropdown-menu multi-level"><li class="item-392">    <a href="http://www.minidsp.com/products/dirac-series/product-line-summary">Product line summary </a>
+    </li><li class="item-393">    <a href="http://www.minidsp.com/products/dirac-series/ddrc-22a">DDRC-22A </a>
+    </li><li class="item-394">    <a href="http://www.minidsp.com/products/dirac-series/ddrc-22d">DDRC-22D </a>
+    </li><li class="item-395">    <a href="http://www.minidsp.com/products/dirac-series/ddrc-22da">DDRC-22DA </a>
+    </li><li class="item-410">    <a href="http://www.minidsp.com/products/dirac-series/ddrc-88a">DDRC-88A </a>
+    </li><li class="item-405">    <a href="http://www.minidsp.com/products/dirac-series/opendrc-to-ddrc-upgrade">OpenDRC to DDRC upgrade </a>
+    </li></ul></li><li class="item-384 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/products/ht-series">HomeTheater Series </a>
+    <ul class="dropdown-menu multi-level"><li class="item-398">    <a href="http://www.minidsp.com/products/ht-series/product-line-summary">Product line summary </a>
+    </li><li class="item-396">    <a href="http://www.minidsp.com/products/ht-series/nanoavr-hd">nanoAVR-HD </a>
+    </li><li class="item-397">    <a href="http://www.minidsp.com/products/ht-series/nanoavr-dl">nanoAVR-DL Dirac Live </a>
+    </li></ul></li><li class="item-272 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/products/opendrc-series">OpenDRC series </a>
+    <ul class="dropdown-menu multi-level"><li class="item-273">    <a href="http://www.minidsp.com/products/opendrc-series/summary-table">Summary table </a>
+    </li><li class="item-274">    <a href="http://www.minidsp.com/products/opendrc-series/opendrc-di">OpenDRC-DI </a>
+    </li><li class="item-275">    <a href="http://www.minidsp.com/products/opendrc-series/opendrc-an">OpenDRC-AN </a>
+    </li><li class="item-380">    <a href="http://www.minidsp.com/products/opendrc-series/opendrc-da">OpenDRC-DA </a>
+    </li><li class="item-276">    <a href="http://www.minidsp.com/products/opendrc-series/opendrc-plug-ins">OpenDRC plug-ins </a>
+    </li><li class="item-277">    <a href="http://www.minidsp.com/products/opendrc-series/minisharc-kit">miniSHARC kit </a>
+    </li><li class="item-334">    <a href="http://www.minidsp.com/products/opendrc-series/an-fp">AN-FP </a>
+    </li><li class="item-361">    <a href="http://www.minidsp.com/products/opendrc-series/digi-fp">DIGI-FP </a>
+    </li><li class="item-408">    <a href="http://www.minidsp.com/products/opendrc-series/da-fp">DA-FP </a>
+    </li></ul></li><li class="item-278 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/products/plate-amplifiers">Plate Amplifiers </a>
+    <ul class="dropdown-menu multi-level"><li class="item-360">    <a href="http://www.minidsp.com/products/plate-amplifiers/pwr-ice-series">PWR-ICE Series </a>
+    </li><li class="item-322">    <a href="http://www.minidsp.com/products/plate-amplifiers/pwr-ice125">PWR-ICE125 </a>
+    </li><li class="item-358">    <a href="http://www.minidsp.com/products/plate-amplifiers/pwr-ice250">PWR-ICE250 </a>
+    </li><li class="item-407">    <a href="http://www.minidsp.com/products/plate-amplifiers/pwr-ice125wd">PWR-ICE125WD </a>
+    </li><li class="item-279">    <a href="http://www.minidsp.com/products/plate-amplifiers/pwr-dsp-products">PWR-DSP products </a>
+    </li><li class="item-280">    <a href="http://www.minidsp.com/products/plate-amplifiers/pwr-dsp1">PWR-DSP1 </a>
+    </li><li class="item-281">    <a href="http://www.minidsp.com/products/plate-amplifiers/pwr-dsp2">PWR-DSP2 </a>
+    </li><li class="item-282">    <a href="http://www.minidsp.com/products/plate-amplifiers/pwr-dsp3">PWR-DSP3 </a>
+    </li></ul></li><li class="item-283 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/products/usb-audio-interface">USB Audio Interface </a>
+    <ul class="dropdown-menu multi-level"><li class="item-284">    <a href="http://www.minidsp.com/products/usb-audio-interface/usbstreamer">USBStreamer </a>
+    </li><li class="item-336">    <a href="http://www.minidsp.com/products/usb-audio-interface/usbstreamer-box">USBStreamer Box </a>
+    </li><li class="item-285">    <a href="http://www.minidsp.com/products/usb-audio-interface/ministreamer">miniStreamer </a>
+    </li></ul></li><li class="item-289 active deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/products/acoustic-measurement">Acoustic Measurement </a>
+    <ul class="dropdown-menu multi-level"><li class="item-290 current active">    <a href="http://www.minidsp.com/products/acoustic-measurement/umik-1">UMIK-1 </a>
+    </li></ul></li><li class="item-411 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/products/headphone-amp">Headphone Amp </a>
+    <ul class="dropdown-menu multi-level"><li class="item-412">    <a href="http://www.minidsp.com/products/headphone-amp/everamp">everAMP </a>
+    </li></ul></li><li class="item-286 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/products/accessories">Accessories </a>
+    <ul class="dropdown-menu multi-level"><li class="item-287">    <a href="http://www.minidsp.com/products/accessories/minidc-isolator">miniDC Isolator </a>
+    </li><li class="item-288">    <a href="http://www.minidsp.com/products/accessories/misc-accessories">Misc Accessories </a>
+    </li><li class="item-350">    <a href="http://www.minidsp.com/products/accessories/rack-mount-box-2x8-8x8">Rack mount box (2x8/8x8) </a>
+    </li></ul></li><li class="item-401 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/products/network-audio">Network audio </a>
+    <ul class="dropdown-menu multi-level"><li class="item-402">    <a href="http://www.minidsp.com/products/network-audio/avb-dg">AVB-DG </a>
+    </li><li class="item-403">    <a href="http://www.minidsp.com/products/network-audio/avb-sw">AVB-SW </a>
+    </li><li class="item-404">    <a href="http://www.minidsp.com/products/network-audio/avb-dgk">AVB-DGK </a>
+    </li></ul></li></ul></li><li class="item-212 deeper dropdown parent">    <a class="dropdown-toggle" data-toggle="dropdown" href="http://www.minidsp.com/applications">Applications <b class="caret"></b></a>
+    <ul class="dropdown-menu "><li class="item-298 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/applications/dsp-basics">DSP basics </a>
+    <ul class="dropdown-menu multi-level"><li class="item-303">    <a href="http://www.minidsp.com/applications/dsp-basics/minidsp-concept">miniDSP Concept </a>
+    </li><li class="item-301">    <a href="http://www.minidsp.com/applications/dsp-basics/system-equalization">System Equalization </a>
+    </li><li class="item-300">    <a href="http://www.minidsp.com/applications/dsp-basics/peq-vs-graphic-eq">PEQ vs Graphic EQ </a>
+    </li><li class="item-302">    <a href="http://www.minidsp.com/applications/dsp-basics/gain-structure-101">Gain Structure 101 </a>
+    </li><li class="item-299">    <a href="http://www.minidsp.com/applications/dsp-basics/fir-vs-iir-filtering">FIR vs IIR filtering </a>
+    </li><li class="item-314">    <a href="http://www.minidsp.com/applications/dsp-basics/time-alignment">Time alignment </a>
+    </li></ul></li><li class="item-213 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/applications/digital-crossovers">Digital Crossovers </a>
+    <ul class="dropdown-menu multi-level"><li class="item-214">    <a href="http://www.minidsp.com/applications/digital-crossovers/digital-crossover-basics">Digital Crossover basics </a>
+    </li><li class="item-215">    <a href="http://www.minidsp.com/applications/digital-crossovers/stereo-2-way-xover">Stereo 2 Way Xover </a>
+    </li><li class="item-216">    <a href="http://www.minidsp.com/applications/digital-crossovers/stereo-34way-xover">Stereo 3/4way Xover </a>
+    </li><li class="item-323">    <a href="http://www.minidsp.com/applications/digital-crossovers/subwoofer-integration-with-minidsp">Subwoofer integration with miniDSP </a>
+    </li><li class="item-354">    <a href="http://www.minidsp.com/applications/digital-crossovers/opendrc-as-fir-tool">OpenDRC as FIR tool </a>
+    </li></ul></li><li class="item-217 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/applications/digital-room-correction">Digital Room Correction </a>
+    <ul class="dropdown-menu multi-level"><li class="item-218">    <a href="http://www.minidsp.com/applications/digital-room-correction/drc-basics">DRC basics </a>
+    </li><li class="item-368">    <a href="http://www.minidsp.com/applications/digital-room-correction/dirac-series-getting-started">Dirac series </a>
+    </li><li class="item-219">    <a href="http://www.minidsp.com/applications/digital-room-correction/acouratedrc">AcourateDRC </a>
+    </li><li class="item-352">    <a href="http://www.minidsp.com/applications/digital-room-correction/dirac-live-setup">Dirac Live setup </a>
+    </li><li class="item-329">    <a href="http://www.minidsp.com/applications/digital-room-correction/align2">Align2 </a>
+    </li></ul></li><li class="item-355 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/applications/home-theater-tuning">Home Theater tuning </a>
+    <ul class="dropdown-menu multi-level"><li class="item-356">    <a href="http://www.minidsp.com/applications/home-theater-tuning/equalization-with-nanoavr">Equalization with nanoAVR </a>
+    </li><li class="item-357">    <a href="http://www.minidsp.com/applications/home-theater-tuning/bass-management">Bass management with nanoAVR </a>
+    </li><li class="item-369">    <a href="http://www.minidsp.com/applications/home-theater-tuning/surround-equalization-with-10x10hd">Surround equalization with 10x10HD </a>
+    </li></ul></li><li class="item-347 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/applications/plate-amplifiers">Plate amplifiers </a>
+    <ul class="dropdown-menu multi-level"><li class="item-348">    <a href="http://www.minidsp.com/applications/plate-amplifiers/pwr-ice-for-subwoofer">PWR-ICE for Subwoofer </a>
+    </li><li class="item-349">    <a href="http://www.minidsp.com/applications/plate-amplifiers/pwr-ice-for-2way-speaker">PWR-ICE for 2way speaker </a>
+    </li></ul></li><li class="item-221 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/applications/auto-eq-with-rew">Auto EQ with REW </a>
+    <ul class="dropdown-menu multi-level"><li class="item-406">    <a href="http://www.minidsp.com/applications/auto-eq-with-rew/rew-autoeq-step-by-step">REW AutoEQ step by step </a>
+    </li></ul></li><li class="item-229 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/applications/powered-by-minidsp">Powered by miniDSP </a>
+    <ul class="dropdown-menu multi-level"><li class="item-319">    <a href="http://www.minidsp.com/applications/powered-by-minidsp/linkwitz-lab-lx521">Linkwitz Lab LX521 </a>
+    </li><li class="item-377">    <a href="http://www.minidsp.com/applications/powered-by-minidsp/linkwitz-lab-lxmini">Linkwitz Lab LXmini </a>
+    </li><li class="item-320">    <a href="http://www.minidsp.com/applications/powered-by-minidsp/nao-note-ii-rs">NaO Note II RS </a>
+    </li></ul></li><li class="item-222 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/applications/advanced-tools">Advanced Tools </a>
+    <ul class="dropdown-menu multi-level"><li class="item-223">    <a href="http://www.minidsp.com/applications/advanced-tools/advanced-biquad-programming">Advanced Biquad Programming </a>
+    </li><li class="item-224">    <a href="http://www.minidsp.com/applications/advanced-tools/linkwitz-transform">Linkwitz Transform </a>
+    </li><li class="item-227">    <a href="http://www.minidsp.com/applications/advanced-tools/rephase-fir-tool">rePhase FIR Tool </a>
+    </li><li class="item-225">    <a href="http://www.minidsp.com/applications/advanced-tools/active-crossover-designer">Active Crossover Designer </a>
+    </li><li class="item-226">    <a href="http://www.minidsp.com/applications/advanced-tools/python-open-room-correction">Python Open Room Correction </a>
+    </li><li class="item-318">    <a href="http://www.minidsp.com/applications/advanced-tools/fir-filter-tools">FIR Filter tools </a>
+    </li></ul></li><li class="item-228">    <a href="http://www.minidsp.com/applications/project-gallery">Project Gallery </a>
+    </li><li class="item-325 deeper dropdown-submenu  parent">    <a href="http://www.minidsp.com/applications/acoustic-measurements">Acoustic Measurements </a>
+    <ul class="dropdown-menu multi-level"><li class="item-324">    <a href="http://www.minidsp.com/applications/acoustic-measurements/umik-1-setup-with-rew">UMIK-1 setup with REW </a>
+    </li><li class="item-328">    <a href="http://www.minidsp.com/applications/acoustic-measurements/loudspeaker-measurements">Loudspeaker measurements </a>
+    </li><li class="item-339">    <a href="http://www.minidsp.com/applications/acoustic-measurements/acoustic-measurements">Acoustic measurements </a>
+    </li><li class="item-351">    <a href="http://www.minidsp.com/applications/acoustic-measurements/umik-1-setup-with-dirac-rcs">UMIK-1 setup with Dirac RCS </a>
+    </li><li class="item-335">    <a href="http://www.minidsp.com/applications/acoustic-measurements/umik-1-setup-with-amarra">UMIK-1 setup with Amarra </a>
+    </li><li class="item-338">    <a href="http://www.minidsp.com/applications/acoustic-measurements/umik-1-hdmi-on-windows">UMIK-1 + HDMI on Windows </a>
+    </li><li class="item-337">    <a href="http://www.minidsp.com/applications/acoustic-measurements/umik-1-hdmi-on-mac">UMIK-1 + HDMI on Mac </a>
+    </li><li class="item-373">    <a href="http://www.minidsp.com/applications/acoustic-measurements/using-the-umik-1-with-audiotools-on-ipad">Using the Umik-1 with Audiotools on Ipad </a>
+    </li><li class="item-374">    <a href="http://www.minidsp.com/applications/acoustic-measurements/using-the-umik-1-with-smaart-on-ipad">Using the Umik-1 with Smaart on Ipad </a>
+    </li><li class="item-375">    <a href="http://www.minidsp.com/applications/acoustic-measurements/using-the-umik-1-with-signalpro-on-ipad">Using the Umik-1 with Signalscope Pro on Ipad </a>
+    </li></ul></li></ul></li><li class="item-231 deeper dropdown parent">    <a class="dropdown-toggle" data-toggle="dropdown" href="http://www.minidsp.com/support">Support <b class="caret"></b></a>
+    <ul class="dropdown-menu "><li class="item-232">    <a href="http://www.minidsp.com/support/forum">Forum </a>
+    </li><li class="item-233">    <a href="http://www.minidsp.com/support/downloads">Downloads </a>
+    </li><li class="item-409">    <a href="http://www.minidsp.com/support/userdownloads">User Downloads </a>
+    </li><li class="item-331">    <a href="http://www.minidsp.com/support/community-powered-tutorials">Community Powered Tutorials </a>
+    </li><li class="item-372">    <a href="https://minidsp.desk.com/">Contact us - FAQ</a>
+    </li></ul></li><li class="item-236 deeper dropdown parent">    <a class="dropdown-toggle" data-toggle="dropdown" href="http://www.minidsp.com/aboutus">Company <b class="caret"></b></a>
+    <ul class="dropdown-menu "><li class="item-237">    <a href="http://www.minidsp.com/aboutus/news">News </a>
+    </li><li class="item-238">    <a href="http://www.minidsp.com/aboutus/aboutus">About us </a>
+    </li><li class="item-321">    <a href="http://www.minidsp.com/aboutus/minidsp-blog">miniDSP Blog </a>
+    </li><li class="item-241">    <a href="http://www.minidsp.com/aboutus/minidsp-dealers">miniDSP dealers </a>
+    </li><li class="item-239">    <a href="http://www.minidsp.com/aboutus/press-reviews">Press Reviews </a>
+    </li><li class="item-240">    <a href="http://www.minidsp.com/aboutus/newsletter">Company's Newsletters </a>
+    </li><li class="item-242 last">    <a href="http://www.minidsp.com/aboutus/terms-and-conditions">Terms and Conditions </a>
+    </li></ul></li>    </ul>
+  </div>
+</div>      </div>
+    </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- !Main Menu -->
+
+
+
+
+
+<!-- main-wapper -->
+<div class="main-wapper">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-sm-12  col-md-12 main-column  ">
+        
+        <div class="main-content">
+          
+<div id="system-message-container">
+</div>
+          <div class="productdetails-view productdetails">
+
+
+<div class="back-to-category">
+  <a href="http://www.minidsp.com/products/acoustic-measurement" class="product-details" title="Acoustic Measurement Tools">Back to: Acoustic Measurement Tools</a>
+</div>
+
+<h1>UMIK-1</h1>
+
+
+
+  <div class="icons">
+    <a class="modal" rel="{handler: 'iframe', size: {x: 700, y: 550}}" title="Email" href="http://www.minidsp.com/products/acoustic-measurement/umik-1/recommend?tmpl=component"><img src="UMIK-1%20%7C%20MiniDSP_files/emailButton.png" alt="Email"></a>    <div class="clear"></div>
+  </div>
+
+
+<div>
+  <div class="col-sm-5">
+      <div class="main-image">
+
+    <a title="UMIK-1" rel="vm-additional-images" href="http://www.minidsp.com/images/stories/virtuemart/product/UMIK_1_50b85483ecee7.jpg"><img src="UMIK-1%20%7C%20MiniDSP_files/UMIK_1_50b85483ecee7.jpg" alt="UMIK-1"></a><span class="vm-img-desc">UMIK-1</span>
+    <div class="clear"></div>
+  </div>
+  </div>
+
+  <div class="col-sm-7">
+    <div class="spacer-buy-area">
+
+      <div class="row">
+        <div class="col-xs-12">
+                      <div class="product-short-description">
+              USB Measurement omnidirectional microphone for a plug&amp;play measurement of your system.            </div>
+                  </div>
+        <div class="col-xs-6"><div class="product-price" id="productPrice22">
+	<strong>Price: </strong><span class="price-crossed"></span><div class="PricesalesPrice" style="display : block;"><span class="PricesalesPrice"><b>75  USD</b></span></div></div>
+</div>
+        <div class="col-xs-6">
+                        <span class="vote">
+	                          <span title=" Rating: 5/5" class="ratingbox" style="display:inline-block;">
+				<span class="stars-orange" style="width:115.2px">
+				</span>
+			    </span>
+			</span>
+
+
+                    </div>
+
+      </div>
+      
+<div class="addtocart-area">
+
+	<form method="post" class="product js-recalculate" action="/products/acoustic-measurement/umik-1">
+                <input name="quantity" value="1" type="hidden">
+		
+		<div class="addtocart-bar">
+
+<script type="text/javascript">
+		function check(obj) {
+ 		// use the modulus operator '%' to see if there is a remainder
+		remainder=obj.value % 1;
+		quantity=obj.value;
+ 		if (remainder  != 0) {
+ 			alert('You can buy this product only in multiples of 1 pieces!!');
+ 			obj.value = quantity-remainder;
+ 			return false;
+ 			}
+ 		return true;
+ 		}
+</script> 
+
+							<!-- <label for="quantity22" class="quantity_box">Quantity: </label> -->
+				<span class="quantity-box">
+		<input class="quantity-input js-recalculate" name="quantity[]" onblur="check(this);" value="1" type="text">
+	    </span>
+				<span class="quantity-controls js-recalculate">
+		<input class="quantity-controls quantity-plus" type="button">
+		<input class="quantity-controls quantity-minus" type="button">
+	    </span>
+				
+								<span class="addtocart-button">
+		<input name="addtocart" class="addtocart-button" value="Add to Cart" title="Add to Cart" type="submit">		</span>
+				
+			<div class="clear"></div>
+		</div>
+				<input class="pname" value="UMIK-1" type="hidden">
+		<input name="option" value="com_virtuemart" type="hidden">
+		<input name="view" value="cart" type="hidden">
+		<noscript><input type="hidden" name="task" value="add"/></noscript>
+		<input name="virtuemart_product_id[]" value="22" type="hidden">
+	</form>
+
+	<div class="clear"></div>
+</div>
+
+              <div class="availability">
+          <img src="UMIK-1%20%7C%20MiniDSP_files/3-5d.gif" alt="3-5d.gif" class="availability">        </div>
+      
+      
+      
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+
+<div id="vmTabSection">
+  <ul role="tablist" class="nav nav-tabs" id="myTab">
+    <li class="active"><a data-toggle="tab" role="tab" href="#tab-desc">Description</a></li>
+    <li class=""><a data-toggle="tab" role="tab" href="#tab-image">View More Images</a></li>
+    <li class=""><a data-toggle="tab" role="tab" href="#tab-review">Customer Reviews</a></li>
+    <li class=""><a data-toggle="tab" role="tab" href="#tab-related">Related Products</a></li>
+  </ul>
+  <div class="tab-content" id="vmTabContent">
+    <div id="tab-desc" class="tab-pane fade active in"><p>The UMIK-1 is 
+an omni-directional USB measurement microphone providing Plug &amp; Play
+ acoustic measurement. From speaker &amp; room acoustic measurement to 
+recording, this microphone provides low noise and accurate results you 
+can rely on. Forget about driver installation, OS compatibility and 
+un-calibrated mics. The Umik-1 is a USB Audio class 1 device 
+automatically recognized by all Operating Systems (Windows/Mac) and Ipad
+ with <a target="_self" href="http://store.apple.com/us/product/MC531ZM/A/apple-ipad-camera-connection-kit?fnode=3a">Camera Connection Kit</a>.
+ It is provided with a unique calibration file based on the serial 
+number to insure an accurate measurement. Combined with our recommended 
+acoustic measurement software, it is the perfect match for a 
+plug&amp;play measurement system.</p>
+<h3>Product Downloads</h3>
+<ul>
+	<li><a href="http://www.minidsp.com/images/documents/Product%20Brief%20-%20Umik.pdf"> UMIK-1 Product datasheet</a></li>
+</ul>
+<h3>What's in the box?</h3>
+<ul>
+	<li>1 x UMIK-1 microphone</li>
+	<li>1 x shielded USB cable (1.5m)</li>
+	<li>1 x mini Tripod</li>
+	<li>1 x foam wind screen</li>
+	<li>A padded plastic case</li>
+</ul>
+<h3 style="text-align: left;">How to get started?</h3>
+<p>miniDSP assembled some very comprehensive steps by steps for the 
+UMIK-1 for all sorts of applications. Please make sure to start reading <a target="_blank" href="http://www.minidsp.com/applications/acoustic-measurements">our application notes</a> to be up and running in no time!</p>
+<p><a name="umikcalfile"></a>
+</p>
+<h3 style="text-align: left;">Unique Calibration File Download</h3>
+<p>All UMIK-1 are calibrated with a unique calibration file. In 
+addition, a unique auto-generated 90-degree calibration file for use 
+with the nanoAVR DL is provided. To download the calibration files, look
+ for the 7 digit Serial Number found on the body of the microphone.</p>
+<ol>
+	<li>Enter the serial number in the form below (three digits then four digits e.g. 700-XXXX).</li>
+	<li>Your calibration files will automatically download in most browsers. If not, click on the links provided to manually download.</li>
+</ol>
+<p>
+</p><div style="border: solid #e8e8e8 4px; background-color:#e0e0e8;width:100%;padding: 12px 36px 12px 36px;">
+<p><b>Calibration file download</b></p>
+
+  <form method="POST" action="#umikcalfile" style="padding:0; margin:0;">
+    Serial number:&nbsp;&nbsp;&nbsp;&nbsp;<input style="width: 3em;" size="3" maxlength="3" name="serial1" type="text">-<input style="width: 4em;" size="4" maxlength="4" name="serial2" type="text">
+    <input value="Submit" type="submit">
+  </form>
+
+</div><p></p>
+<h3 style="text-align: left;">Recommended by our Friends:</h3>
+<p>The miniDSP team built long term relationships with the following 
+leading software applications and is proud to showcase them as our 
+recommeded software solutions:</p>
+<p><a target="_blank" href="http://www.hometheatershack.com/roomeq/"><strong>REW</strong></a>:
+ miniDSP worked along with John Mulcahy to develop even greater 
+compatibility for the UMIK-1 inside REW! With the latest beta release of
+ REW (v5.01 and up), the UMIK-1 is automatically recognized by the 
+software and prompted for use when REW is started with the microphone 
+plugged in.</p>
+<p style="text-align: center;"><img src="UMIK-1%20%7C%20MiniDSP_files/Prompt_REW.jpg" alt="Prompt_REW" border="0" height="126" width="316"><img src="UMIK-1%20%7C%20MiniDSP_files/Prompt2_REW.jpg" alt="Prompt2_REW" border="0" height="126" width="316">
+</p>
+<p style="text-align: center;"><a href="http://www.minidsp.com/applications/acoustic-measurements/umik-1-setup-with-rew">Please follow our application note for more information</a>.</p>
+<p style="text-align: left;"><a target="_blank" href="http://shop.dirac.se/category/56-full-versions.aspx"><strong>Dirac RCS</strong></a>:
+ As a well known reference in the world of room correction with 
+countless high end audio/automotive, we're honored to have Dirac as part
+ of our partners. Dirac RCS is available in two version (stereo or 
+multichannel). Please consult Dirac's website for more info.</p>
+<p style="text-align: left;">&nbsp;<a target="_blank" href="http://shop.dirac.se/category/56-full-versions.aspx"><img style="display: block; margin-left: auto; margin-right: auto;" alt="Dirac RCS" src="UMIK-1%20%7C%20MiniDSP_files/umik-1-dirac-measured.png"></a>
+</p>
+<p style="text-align: center;"><a target="_blank" href="http://www.minidsp.com/applications/acoustic-measurements/211-umik-1-dirac">Please follow our application note for more information</a>.</p>
+<p style="text-align: left;"><a target="_blank" href="http://shop.dirac.se/category/56-full-versions.aspx"><strong>Umik-1 on Ipad</strong></a>:
+ Our technical team has been testing the UMIK-1 along with few ipad 
+apps. A plug&amp;play setup for a full featured measurement + SPL meter 
+running from the Ipad. Check out our application section for more 
+info.&nbsp;</p>
+<p style="text-align: center;"><img alt="umik-1-signalscope" src="UMIK-1%20%7C%20MiniDSP_files/umik-1-signalscope.png">
+</p>
+<p style="text-align: center;"><a target="_blank" href="http://www.minidsp.com/applications/acoustic-measurements">Please follow our application note for more information</a>.</p>
+<p style="text-align: left;"><a target="_blank" href="http://www.sonicstudio.com/amarra/amarrasymphony_irc"><strong>Amarra Symphony</strong></a>:
+ Amarra Symphony with IRC is an advanced music file player for the Apple
+ Mac platform. It includes a feature called "Impulse Response 
+Correction" (IRC), that corrects for acoustical errors at the listening 
+position caused by early reflections from the speaker and listening 
+room. It also provides the ability to tailor the response at the 
+listening position using target curves.</p>
+<p style="text-align: left;"><img style="display: block; margin-left: auto; margin-right: auto;" src="UMIK-1%20%7C%20MiniDSP_files/amarra-symphony-irc-button.png">
+</p>
+<p style="text-align: center;"><a target="_blank" href="http://www.minidsp.com/applications/acoustic-measurements/umik-1-setup-with-amarra">Please follow our application note for more information</a>.</p>
+<p style="text-align: center;">&nbsp;</p></div>
+    <div id="tab-image" class="tab-pane fade">
+          </div>
+    <div id="tab-review" class="tab-pane fade">
+
+
+
+
+	<div class="customer-reviews">
+		<form method="post" action="/products/acoustic-measurement/umik-1" name="reviewForm" id="reviewform">
+		<!-- 
+	<h4>Reviews</h4>
+ 	-->
+	<div class="list-reviews">
+		
+									<div class="normal">
+						<span class="date">Friday, 19 September 2014</span>
+						<span class="vote">
+				<span title="Rating: 5/5" class="vmicon ratingbox" style="display:inline-block;width:120px;">
+					<span class="stars-orange" style="width:120px">
+					</span>
+				</span></span>
+						<blockquote>Top notch. Complete plug and play solution with a 
+calibration file that makes messing with off-board sound cards a thing 
+of the past.</blockquote>
+						<span class="bold">Russell Williams</span>
+					</div>
+					
+									<div class="highlight">
+						<span class="date">Tuesday, 09 July 2013</span>
+						<span class="vote">
+				<span title="Rating: 4/5" class="vmicon ratingbox" style="display:inline-block;width:120px;">
+					<span class="stars-orange" style="width:96px">
+					</span>
+				</span></span>
+						<blockquote>Good product that allows you to not have to much 
+around with phantom voltage sources and XLR to USB adaptors. My only 
+complaint is the use of mini USB socket - as it is quite difficult to 
+find a long cable with this type of USB - and so adapters and extenders 
+became necessary again.</blockquote>
+						<span class="bold">Graham</span>
+					</div>
+					
+									<div class="normal">
+						<span class="date">Thursday, 23 May 2013</span>
+						<span class="vote">
+				<span title="Rating: 5/5" class="vmicon ratingbox" style="display:inline-block;width:120px;">
+					<span class="stars-orange" style="width:120px">
+					</span>
+				</span></span>
+						<blockquote>Good product really.  easy to use, just plug and play.  Good case and perfect value for the m<br>
+</blockquote>
+						<span class="bold">Volodimir Saburov</span>
+					</div>
+					<a href="http://www.minidsp.com/products/acoustic-measurement/umik-1?showall=1" class="details" title="More reviews">More reviews</a>		<div class="clear"></div>
+	</div>
+
+		<input name="virtuemart_product_id" value="22" type="hidden">
+	<input name="option" value="com_virtuemart" type="hidden">
+	<input name="virtuemart_category_id" value="0" type="hidden">
+	<input name="virtuemart_rating_review_id" value="0" type="hidden">
+	<input name="task" value="review" type="hidden">
+		</form>
+	</div>
+	</div>
+    <div id="tab-related" class="tab-pane fade"><div class="product-related-products">
+
+  <!--
+    	<h4>Related Products</h4>
+ 		-->
+        <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="product-field product-field-type-R">
+            <span class="product-field-display"><a href="http://www.minidsp.com/products/opendrc-series/opendrc-an" title="OpenDRC-AN"><img src="UMIK-1%20%7C%20MiniDSP_files/opendrc-an_90x90.png" alt="opendrc-an"> OpenDRC-AN</a></span>
+          </div>
+              </div>
+          <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="product-field product-field-type-R">
+            <span class="product-field-display"><a href="http://www.minidsp.com/products/opendrc-series/opendrc-di" title="OpenDRC-DI"><img src="UMIK-1%20%7C%20MiniDSP_files/opendrc-di-rear_90x90.png" alt="opendrc-di-rear"> OpenDRC-DI</a></span>
+          </div>
+              </div>
+    
+</div>
+</div>
+  </div>
+</div>
+<script type="text/javascript">
+
+  ;
+  (function ($) {
+    $(document).ready(function () {
+      $('#vcp-virtuemart .tab-item li').click(function () {
+        var forval = $(this).attr('forval');
+        $('#vcp-virtuemart .content >div').removeClass('active').filter('#vcp-virtuemart .content #' + forval).addClass('active');
+        $('#vcp-virtuemart .tab-item li').removeClass('active').filter(this).addClass('active');
+
+        if (forval == 'tab-review') {
+          var steps = 5;
+          var parentPos = $('.write-reviews .ratingbox').position();
+          var boxWidth = $('.write-reviews .ratingbox').width();
+          var starSize = (boxWidth / steps);
+          var ratingboxPos = $('.write-reviews .ratingbox').offset();
+
+          $('.write-reviews .ratingbox').unbind('mousemove').mousemove(function (e) {
+            var span = $(this).children();
+            var dif = e.pageX - ratingboxPos.left;
+            difRatio = Math.floor(dif / boxWidth * steps) + 1;
+            span.width(difRatio * starSize);
+            $('#vote').val(difRatio);
+          });
+        }
+      });
+    });
+  })(jQuery);
+</script>
+
+
+
+</div>
+
+        </div>
+
+              </div>
+
+          </div>
+  </div>
+</div>
+<!-- !main-wapper -->
+
+
+  <!-- footer-wapper -->
+  <footer class="footer-wapper">
+    <div class="container">
+      <div class="row">
+                  <div class="footer-top">
+                <div class="moduletable">
+      <div class="moduletable-inner">
+                
+<ul class="menu nav navbar-nav">
+<li class="item-101"><a href="http://www.minidsp.com/">Home</a></li><li class="item-198 active parent"><a href="http://www.minidsp.com/products">Products</a></li><li class="item-212 parent"><a href="http://www.minidsp.com/applications">Applications</a></li><li class="item-231 parent"><a href="http://www.minidsp.com/support">Support</a></li><li class="item-236 parent"><a href="http://www.minidsp.com/aboutus">Company</a></li></ul>
+      </div>
+    </div>
+  
+          </div>
+        
+                  <hr class="short light">
+
+          <div class="footer-bottom">
+                <div class="moduletable col-md-7 copyright">
+      <div class="moduletable-inner">
+                <div class="copyright">Copyright © 2009-2014 by miniDSP Ltd.</div>
+<div class="policy">
+	<ul class="nav navbar-nav">
+		<li><a href="https://www.iubenda.com/privacy-policy/815854" target="blank">Privacy Policy</a>
+		</li>
+		<li><a href="http://www.minidsp.com/aboutus/terms-and-conditions">Terms of Use</a>
+		</li>
+	</ul>
+</div>      </div>
+    </div>
+      <div class="moduletable col-md-5 social-links">
+      <div class="moduletable-inner">
+                <p><a href="https://twitter.com/minidsp" target="_blank" class="twitter"><span class="socicon">a</span></a><a href="http://www.minidsp.com/component/ninjarsssyndicator/?feed_id=1&amp;format=raw" target="_blank" class="rss"><span class="socicon">,</span></a><a href="http://facebook.com/minidsp" target="_blank" class="facebook"><span class="socicon">b</span></a><a href="https://www.youtube.com/user/minidsp" target="_blank" class="youtube"><span class="socicon">r</span></a></p>      </div>
+    </div>
+  
+          </div>
+              </div>
+    </div>
+  </footer>
+  <!-- !footer-wapper -->
+</div>
+<noscript><strong>JavaScript is currently disabled.</strong>Please enable it for a better experience of <a href="http://2glux.com/projects/jumi">Jumi</a>.</noscript>
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>

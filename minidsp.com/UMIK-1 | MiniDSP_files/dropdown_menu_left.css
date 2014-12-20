@@ -1,0 +1,357 @@
+/**
+ * @version		$Id$
+ * @author		Joomseller
+ * @package		Joomla!
+ * @subpackage	Mod_DropDown_MooMenu
+ * @copyright	Copyright (C) 2008 - 2011 by Joomseller Solutions. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl.html GNU/GPL version 3
+ */
+
+/* Clearfix
+-------------------------------------------------------------*/
+* html .clearfix {
+  height: 1%; /* IE5-6 */
+}
+
+html[xmlns] .clearfix { /* O */
+  display: block;
+}
+
+.clearfix:after { /* FF, O, etc. */
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.wrap {
+  height: auto !important;
+  visibility: visible !important;
+  border: 0 none;
+  clear: both;
+  float: none;
+  font-size: 1px;
+  line-height: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none outside none;
+}
+
+div.js-moduletable ul, div.js-module ul {
+  margin: 10px !important;
+}
+
+#js-mainnav {
+  background: url(../images/grad1-mask.png) repeat-x top #014E72; /* you can change/delete the transparent gradient image or the background color */
+  border-top: 1px solid #3A0700; /* you can change the color of the border */
+  line-height: 1;
+  position: relative;
+  z-index: 9;
+}
+
+.js-megamenu { margin: 0; padding: 0; font-family: Helvetica, Arial, sans-serif; font-size: 13px; }
+
+.js-megamenu a.over, .js-megamenu a.active {
+  color: #ffffff !important;
+}
+
+ul.megamenu { margin: 10px; /* menu's gutter */ }
+
+ul.megamenu.level1 {
+  padding: 0;
+}
+
+/* lv - 0
+-----------------------------------*/
+/* Styling ---*/
+ul.level0 {
+  border-right: 1px solid #014E72; /* you can remove/comment this line or move the border to the left*/
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+ul.level0 li.mega {
+  background: url(../images/grad1-mask.png) repeat-x top #014E72;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+ul.level0 li.mega a.mega {
+  border-left: 1px solid #014E72; /* you should comment/delete this line */
+  border-right: 1px solid #333333; /* and this line */
+  color: #cccccc;
+  display: block;
+  font-weight: bold;
+  line-height: normal;
+  margin: 0;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+ul.level0 li.mega .has-image {
+  padding-left: 25px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: left top;
+  cursor: pointer;
+}
+
+span.menu-image {
+  background-position: left 1px;
+  background-repeat: no-repeat;
+  display: block;
+  overflow: hidden;
+  padding-left: 21px;
+}
+
+ul.level0 li.mega span.menu-title { display: block; }
+
+ul.level0 li.mega span.menu-desc {
+  display: block;
+  font-weight: normal;
+  font-size: 92%;
+  color: #999;
+}
+
+ul.level0 li.mega a img {
+  float: left;
+  padding-right: 5px;
+}
+
+ul.level0 li.over,
+ul.level0 li.haschild-over {
+  background: url(../images/grad1-mask.png) repeat-x top #006699; /* you can change/remove the transparent gradient or the color */
+}
+
+ul.level0 li.haschild a.mega span.menu-title,
+ul.level0 li.haschild-over a.mega span.menu-title {
+  background: url(../images/arrow3.png) no-repeat left center;
+  padding-left: 12px;
+}
+
+ul.level0 li.haschild a.mega span.menu-desc,
+ul.level0 li.haschild-over a.mega span.menu-desc {
+  padding-left: 12px;
+}
+
+ul.level0 li.active {
+  background: url(../images/grad1-mask.png) repeat-x top #006699;
+}
+
+ul.level0 li #current.active {
+  background: none;
+}
+
+/* lv - 1 and below
+-----------------------------------*/
+
+/* Layout ---*/
+.js-megamenu li.mega .childcontent { display: block; height: auto; position: absolute; }
+
+.js-megamenu li.mega .childcontent,
+.js-megamenu li.haschild-over li.mega .childcontent,
+.js-megamenu li.mega li.haschild-over li.mega .childcontent,
+.js-megamenu li.mega li.mega li.haschild-over li.mega .childcontent,
+.js-megamenu li.mega li.mega li.mega li.haschild-over li.mega .childcontent,
+.js-megamenu li.mega li.mega li.mega li.mega li.haschild-over li.mega .childcontent { left: -999em; /*hide the menu*/ }
+
+.js-megamenu li.haschild-over .childcontent,
+.js-megamenu li.mega li.haschild-over .childcontent,
+.js-megamenu li.mega li.mega li.haschild-over .childcontent,
+.js-megamenu li.mega li.mega li.mega li.haschild-over .childcontent,
+.js-megamenu li.mega li.mega li.mega li.mega li.haschild-over .childcontent,
+.js-megamenu li.mega li.mega li.mega li.mega li.mega li.haschild-over .childcontent { left: auto; /*show on parent:hover*/ }
+
+.js-megamenu li.mega .right,
+.js-megamenu li.haschild-over li.mega .right,
+.js-megamenu li.mega li.haschild-over li.mega .right,
+.js-megamenu li.mega li.mega li.haschild-over li.mega .right,
+.js-megamenu li.mega li.mega li.mega li.haschild-over li.mega .right,
+.js-megamenu li.mega li.mega li.mega li.mega li.haschild-over li.mega .right { right: auto; /*hide the menu*/ }
+
+.js-megamenu li.haschild-over .right { right: 0; /*show on parent:hover*/ }
+
+.js-megamenu li.mega li.haschild-over .right,
+.js-megamenu li.mega li.mega li.haschild-over .right,
+.js-megamenu li.mega li.mega li.mega li.haschild-over .right,
+.js-megamenu li.mega li.mega li.mega li.mega li.haschild-over .right,
+.js-megamenu li.mega li.mega li.mega li.mega li.mega li.haschild-over .right { right: 12em; /*show on parent:hover*/ }
+
+ul.level1 li.mega { float: none; }
+
+ul.level1 .childcontent { margin: -2em 0 0 160px; }
+
+/* Columns ---*/
+.megacol { float: left; border-top: 1px solid #001A26; }
+
+/*
+.cols1 .megacol { width: 100px }
+.cols2 .megacol { width: 50%; }
+.cols3 .megacol { width: 33.3%; }
+.cols4 .megacol { width: 25%; }
+.cols5 .megacol { width: 20%; }
+.cols6 .megacol { width: 16.6%; }
+.cols7 .megacol { width: 14.2%; }
+.cols8 .megacol { width: 12.5%; }
+.cols9 .megacol { width: 11.1%; }
+.cols10 .megacol { width: 10%; }
+
+
+.js-megamenu .cols1 { width: 200px; }
+.js-megamenu .cols2 { width: 400px; }
+.js-megamenu .cols3 { width: 600px; }
+.js-megamenu .cols4 { width: 800px; }
+.js-megamenu .cols5 { width: 1000px; }
+.js-megamenu .cols6 { width: 1200px; }
+.js-megamenu .cols7 { width: 1400px; }
+.js-megamenu .cols8 { width: 1800px; }
+.js-megamenu .cols9 { width: 2000px; }
+.js-megamenu .cols10 { width: 2200px; }
+*/
+
+/* Styling ---*/
+ul.level1 li.mega { border-top: 1px dotted #003652; background: none; }
+
+ul.level1 li.first { border-top: 0; }
+
+ul.level1 li.mega a.mega {
+  background: none;
+  border: 0;
+  color: #cccccc;
+  font-weight: normal;
+  padding: 8px 5px;
+}
+
+ul.level1 li.mega a.mega span.menu-title { background: none; padding: 0; }
+
+ul.level1 li.haschild,
+ul.level1 li.haschild-over {
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  padding: 0;
+}
+
+ul.level1 li.over, ul.level1 li.haschild-over { background-color: #00527C; }
+
+ul.level1 li.group { background: none; }
+
+/* CHILD CONTENT
+-----------------------------------*/
+.childcontent {
+  z-index: 999;
+}
+
+.childcontent-inner {
+  background: #002A40; /*change here the color to match the new color you have set for mainnav */
+  border-right: 1px solid #3A0700;
+  color: #ccc; /* after changing code above, you might want to change this color to make the text color readable  */
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: -moz-use-text-color #001A26 #001A26;
+  border-style: none solid solid;
+  border-width: 0 1px 1px;
+  border-bottom: 4px solid #006699;
+}
+
+.childcontent .js-moduletable {
+  color: #ccc;
+  border-bottom: 0;
+  line-height: 1.5;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.childcontent-inner a {
+  color: #fff !important;
+  text-decoration: none;
+  width: auto;
+}
+
+.childcontent-inner .group ul li.active {
+}
+
+.childcontent .group h3 {
+  background: none;
+  color: #fff;
+  border-bottom: 1px dotted #006699;
+  padding: 0 5px 8px;
+  text-transform: none;
+}
+
+.childcontent .group .moduletable {
+  background: none;
+  padding-top: 12px;
+}
+
+.childcontent .js-moduletable .js-box-ct {
+  padding: 0 5px;
+}
+
+.childcontent .js-moduletable a {
+  color: #ccc;
+  text-decoration: none;
+  border-bottom: 1px dotted #ccc;
+}
+
+.childcontent .js-moduletable a:hover,
+.childcontent .js-moduletable a:focus,
+.childcontent .js-moduletable a:active {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+.childcontent .js-moduletable ul:first-child {
+  margin-top: 0 !important;
+}
+
+.childcontent .js-moduletable li {
+  margin-bottom: 5px;
+}
+
+/* Grouped --- */
+.group { }
+
+.group-title {
+  border-bottom: 1px solid #006699;
+  overflow: hidden;
+}
+
+.group-title .menu-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 115%;
+}
+
+.group-title .menu-desc {
+  color: #999;
+  padding-left: 0 !important;
+}
+
+.group-content .js-moduletable,
+.group-content ul.megamenu {
+  margin: 10px; /* Group-content's gutter*/
+  padding: 0;
+}
+
+/* reset --- */
+.childcontent ul.megamenu .js-moduletable {
+  padding: 0;
+}
+
+.childcontent ul.megamenu .js-moduletable h3 {
+  margin-left: 0;
+  margin-right: 0;
+}

@@ -1,0 +1,171 @@
+/* Define for all style
+*************************************************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+.list-unstyled, .list-unstyled ul {
+  min-width: 120px;
+}
+
+.navbar {
+  min-height: 0;
+}
+
+.navbar-vcp {
+  margin: 0;
+  background: #FFF;
+  border: 1px solid #FFF;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+  border-radius: 0;
+}
+
+.navbar-vcp .navbar-toggle {
+  background: #999;
+}
+
+.navbar-vcp .navbar-toggle .icon-bar {
+  background: #666666;
+}
+
+.navbar-vcp .navbar-nav > li {
+
+}
+
+.navbar-vcp .navbar-nav > li:last-child {
+  border: none;
+}
+
+.navbar-vcp .nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  color: #666666;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar-vcp .nav > li > a:hover,
+.navbar-vcp .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.navbar-vcp .dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: nowrap;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.navbar-vcp .dropdown-menu > li > a:hover,
+.navbar-vcp .dropdown-menu > li > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #CCCCCC;
+}
+
+.navbar-vcp .dropdown-menu > .active > a,
+.navbar-vcp .dropdown-menu > .active > a:hover,
+.navbar-vcp .dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #CCCCCC;
+  outline: 0;
+}
+
+.navbar-vcp .dropdown-submenu {
+  position: relative;
+
+}
+
+.navbar-vcp .dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.navbar-vcp .dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.navbar-vcp .dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.navbar-vcp .dropdown-submenu:hover > a:after {
+  border-left-color: #ffffff;
+}
+
+.navbar-vcp .dropdown-submenu .pull-left {
+  float: none;
+}
+
+.navbar-vcp .dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+}
+
+/* when focus in dropdown */
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: #ccc;
+  border-color: #428bca;
+}
+
+/* LARGE SCREEN */
+@media (min-width: 1200px) {
+  .navbar-vcp .navbar-brand {
+    display: none;
+  }
+}
+
+/* PORTRAIT */
+@media (min-width: 980px) {
+  .navbar-vcp .navbar-brand {
+    display: none;
+  }
+}
+
+/* SMALL PORTRAIT */
+@media (min-width: 768px) and (max-width: 979px) {
+  .navbar-vcp .navbar-brand {
+    display: none;
+  }
+}
+
+/* IPAD */
+@media (min-width: 640px) and (max-width: 767px) {
+}
+
+/* SMALL TABLET */
+@media (min-width: 480px) and (max-width: 639px) {
+}
+
+/* IPHONE */
+@media (min-width: 320px) and (max-width: 479px) {
+}
+
+/* SMALL SMARTPHONE */
+@media (min-width: 240px) and (max-width: 319px) {
+}
+
+@media print {
+}
