@@ -1,5 +1,5 @@
 cat responses-all_90deg.tpl >responses-all_90deg.plt
-for i in download/700????_90deg.txt
+for i in ../minidsp.com/umikcal/???????_90deg.txt
 do
     if [ ! -e data/`basename $i txt`tsv ]
     then

@@ -1,5 +1,5 @@
 cat responses-all.tpl >responses-all.plt
-for i in download/700????.txt
+for i in ../minidsp.com/umikcal/???????.txt
 do
     if [ ! -e data/`basename $i txt`tsv ] 
     then
