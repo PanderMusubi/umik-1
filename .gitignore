@@ -1,0 +1,4 @@
+/download/*.txt
+/stripped
+!/generated/7009115*
+/generated/*
