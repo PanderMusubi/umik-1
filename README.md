@@ -13,9 +13,6 @@ increase the calibration range and resolution of your UMIK-1 with
 [Audacity](https://audacityteam.org), [SoX](http://sox.sourceforge.net) or your
 own custom software.
 
-
-
-
 ## Recording
 
 You can record on Linux with the SoX as follows. Install SoX with this command.
@@ -50,7 +47,6 @@ example above.
 Note that here `1` is the card number and `0` is the device number. Use the
 values relevant for what the machine offers.
 
-
 Recording with SoX 60 seconds after 5 seconds of waiting:
 
     rec -q -r 48000 -c 1 -b 24 --buffer 16384 filename.wav trim 5 60
@@ -58,11 +54,12 @@ Recording with SoX 60 seconds after 5 seconds of waiting:
 Recording with Audacity works after selecting the 'Microphone - 2.0 root hub' device for sound input in the sound settings of your window manager. Press 'r' to start recording and 'space' to stop recording.
 
 
-Calibration
------------
-In directory calibration is a script called make-graph.sh for making a graph of the frequency response based on the calibration files. An example is below.
+## Calibration
 
-![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/calibration/response-7007184.png)
+In directory calibration is a script called make-graph.sh for making a graph of
+the frequency response based on the calibration files. An example is below.
+
+![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7007184-fit-response.png)
 
 ## Practical tips
 
@@ -75,20 +72,29 @@ Even you do not open the microphone to change its gain via dip switches, the
 ring holding the microphone closed can sometimes become loose. Check this
 sometimes to prevent damage.
 
-
 ## See also
 
 Product description
-http://www.minidsp.com/products/acoustic-measurement/umik-1
+https://www.minidsp.com/products/acoustic-measurement/umik-1
 
 Product brief
-http://www.minidsp.com/images/documents/Product%20Brief%20-%20Umik.pdf
+https://www.minidsp.com/images/documents/Product%20Brief%20-%20Umik.pdf
 
 Product forum
-http://www.minidsp.com/forum/umik-questions
+https://www.minidsp.com/forum/umik-questions
 
 Product FAQ
 https://minidsp.desk.com/customer/portal/topics/644663-umik-1-related-questions/articles
 
 Home Theater Forum
-http://www.hometheatershack.com/forums/spl-meters-mics-calibration-sound-cards/63808-minidsp-umik-1-microphone.html
+https://www.hometheatershack.com/forums/spl-meters-mics-calibration-sound-cards/63808-minidsp-umik-1-microphone.html
+
+# Issues
+
+Report following error in `7005770.txt`
+
+    19.369	-3.1312
+    19.611	--3.1221
+    19.855	-3.1116
+
+Manually fixed in download.
