@@ -1,5 +1,5 @@
 set title 'Frequency response USB measuremet microphone UMIK-1 \
-for thousands of calibration files'
+for many calibration files'
 set nokey
 set term png size 1920, 1080
 set output '../overview/responses.png'

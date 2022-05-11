@@ -51,15 +51,37 @@ Recording with SoX 60 seconds after 5 seconds of waiting:
 
     rec -q -r 48000 -c 1 -b 24 --buffer 16384 filename.wav trim 5 60
 
-Recording with Audacity works after selecting the 'Microphone - 2.0 root hub' device for sound input in the sound settings of your window manager. Press 'r' to start recording and 'space' to stop recording.
-
+Recording with Audacity works after selecting the 'Microphone - 2.0 root hub'
+device for sound input in the sound settings of your window manager. Press 'r'
+to start recording and 'space' to stop recording.
 
 ## Calibration
 
-In directory calibration is a script called make-graph.sh for making a graph of
-the frequency response based on the calibration files. An example is below.
+In directory `scripts` are scripts to download calibration files, analyse them
+and generate improved calibration files supporting a wider range of frequencies.
+See directory `download` of downladed calibration files and directory `stripped`
+for the files stripped for further processing.
 
-![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7007184-fit-response.png)
+In the directory `overview` are some overview plots generated on all downloaded
+and stripped files. The directory `generated` offers extended calibration files.
+They are interpolated and extrapolated to offer more frequency ranges. The files
+are self explanatory. The files also support processing with sox or Audacity.
+
+![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7009115-fit-response.png)
+
+![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7009115-fit-sampled-response.png)
+
+![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7009115-fit-after.png)
+
+![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7009115-fit-after-zoom.png)
+
+![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7009115-fit-before.png)
+
+![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7009115-fit-before-zoom.png)
+
+Please, create an [issue](https://github.com/PanderMusubi/umik-1/issues) for
+serial numbers to support, as generating these files for all available
+calibration files does not fit in the available storage here.
 
 ## Practical tips
 
@@ -91,10 +113,58 @@ https://www.hometheatershack.com/forums/spl-meters-mics-calibration-sound-cards/
 
 # Issues
 
-Report following error in `7005770.txt`
+Report following error in `7005770.txt` and its 90 degrees version. The double
+minus should be one minus:
 
     19.369	-3.1312
     19.611	--3.1221
     19.855	-3.1116
 
-Manually fixed in download.
+The following range misses its minus:
+
+    36.403	-1.4134
+    36.857	-1.3674
+    37.315	-1.3214
+    37.78	1.2752
+    38.25	1.2285
+    38.726	1.1812
+    39.209	1.1329
+    39.697	1.0835
+    40.191	1.0335
+    40.691	0.9834
+    41.198	0.9346
+    41.711	0.8880
+    42.23	0.8446
+    42.756	0.8050
+    43.288	0.7687
+    43.827	0.7347
+    44.372	0.7022
+    44.925	0.6699
+    45.484	0.6369
+    46.05	0.6023
+    46.623	0.5654
+    47.204	0.5259
+    47.791	0.4835
+    48.386	0.4385
+    48.989	0.3913
+    49.599	0.3424
+    50.216	0.2923
+    50.841	0.2420
+    51.474	0.1922
+    52.115	0.1441
+    52.764	0.0986
+    53.42	0.0567
+    54.085	0.0192
+    54.759	-0.0128
+    55.44	-0.0388
+    56.131	-0.0581
+
+and the following entry misses a minus:
+
+    131.807	-0.1416
+    133.448	0.1403
+    135.109	-0.1391
+
+This has been manually fixed here in the downloaded file and should be reported
+upstream. Also a few more files have similar issues. These should be detected,
+fixed and reported upstream too.

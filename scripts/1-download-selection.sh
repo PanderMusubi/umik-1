@@ -6,7 +6,7 @@ if [ ! -e download ]; then
 	mkdir download
 fi
 cd download
-for i in `cat serial-number-selection.txt|sort -n`; do
+for i in `cat ../scripts/serial-number-selection.txt|sort -n`; do
 	if [ ! -e $i\.txt ]; then
 		wget https://www.minidsp.com/scripts/umikcal/umik.php/$i\.txt
 	fi

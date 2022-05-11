@@ -1,5 +1,5 @@
 set title 'Sensitivity factor USB measurement microphone UMIK-1 \
-for thousands of calibration files'
+for many calibration files'
 set nokey
 set xlabel 'sensitivity factor [dB]'
 set grid xtics lt 0
