@@ -82,9 +82,13 @@ The files also support processing with SoX or Audacity. Some examples are:
 
 [Extended calibration](example/7009115-fit-response.tsv)
 
+Extended calibrations for e.g. SoX for sample frequencies of [375 Hz](example/7009115-fit-sampled-response-375.xml),  [3 kHz](example/7009115-fit-sampled-response-3000.xml),  [44.1 kHz](example/7009115-fit-sampled-response-44100.xml) and [48 kHz](example/7009115-fit-sampled-response-48000.xml)
+
 Audacity equalizers for sample frequencies of [375 Hz](example/7009115-fit-audacity-equalizer-375.xml),  [3 kHz](example/7009115-fit-audacity-equalizer-3000.xml),  [44.1 kHz](example/7009115-fit-audacity-equalizer-44100.xml) and [48 kHz](example/7009115-fit-audacity-equalizer-48000.xml)
 
-Extended calibrations for e.g. SoX for sample frequencies of [375 Hz](example/7009115-fit-sampled-response-375.xml),  [3 kHz](example/7009115-fit-sampled-response-3000.xml),  [44.1 kHz](example/7009115-fit-sampled-response-44100.xml) and [48 kHz](example/7009115-fit-sampled-response-48000.xml)
+These files can be loaded into Audacity under `Effect / Filter Curve EQ` and
+`Effect / Graphic Eq`. However, the format used by Audacity has changed (or I
+cannot find where it uses XML for the equalizer) and this needs refactoring.
 
 Please, create an [issue](https://github.com/PanderMusubi/umik-1/issues) for
 serial numbers to support, as generating these files for all available
