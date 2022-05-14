@@ -63,21 +63,28 @@ See directory `download` of downladed calibration files and directory `stripped`
 for the files stripped for further processing.
 
 In the directory `overview` are some overview plots generated on all downloaded
-and stripped files. The directory `generated` offers extended calibration files.
-They are interpolated and extrapolated to offer more frequency ranges. The files
-are self explanatory. The files also support processing with sox or Audacity.
+and stripped files. The directory `generated` offers extended calibration files
+and graphs in zip files. The calibration files are interpolated and
+extrapolated to offer more frequency ranges. The files are self explanatory.
+The files also support processing with SoX or Audacity. Some examples are:
 
-![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7009115-fit-response.png)
+![](example/7009115-fit-response.png)
 
-![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7009115-fit-sampled-response.png)
+![](example/7009115-fit-sampled-response.png)
 
-![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7009115-fit-after.png)
+![](example/7009115-fit-after.png)
 
-![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7009115-fit-after-zoom.png)
+![](example/7009115-fit-after-zoom.png)
 
-![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7009115-fit-before.png)
+![](example/7009115-fit-before.png)
 
-![](https://raw.githubusercontent.com/PanderMusubi/umik-1/master/generated/graphs/7009115-fit-before-zoom.png)
+![](example/7009115-fit-before-zoom.png)
+
+[Extended calibration](example/7009115-fit-response.tsv)
+
+Audacity equalizers for sample frequencies of [375 Hz](example/7009115-fit-audacity-equalizer-375.xml),  [3 kHz](example/7009115-fit-audacity-equalizer-3000.xml),  [44.1 kHz](example/7009115-fit-audacity-equalizer-44100.xml) and [48 kHz](example/7009115-fit-audacity-equalizer-48000.xml)
+
+Extended calibrations for e.g. SoX for sample frequencies of [375 Hz](example/7009115-fit-sampled-response-375.xml),  [3 kHz](example/7009115-fit-sampled-response-3000.xml),  [44.1 kHz](example/7009115-fit-sampled-response-44100.xml) and [48 kHz](example/7009115-fit-sampled-response-48000.xml)
 
 Please, create an [issue](https://github.com/PanderMusubi/umik-1/issues) for
 serial numbers to support, as generating these files for all available

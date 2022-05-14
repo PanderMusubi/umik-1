@@ -51,7 +51,7 @@ def main(serial_number, extra=False):
         pltfile = open(f'../generated/{serial_number}-fit-before.plt', 'w')  # pylint:disable=consider-using-with,unspecified-encoding
         pltfile.write(f'set title "Least squares polynomial fit from {start} Hz for UMIK-1 serial number {serial_number}"\n')
         pltfile.write('set term png size 1920,1080\n')
-        pltfile.write(f'set output "graphs/{serial_number}-fit-before.png"\n')
+        pltfile.write(f'set output "{serial_number}-fit-before.png"\n')
         pltfile.write('set logscale x\n')
         pltfile.write('set xrange [1:100]\n')
         pltfile.write('set xlabel "frequency [Hz]"\n')
@@ -72,7 +72,7 @@ def main(serial_number, extra=False):
                 pltfile.write(f'"{serial_number}-fit-before-{n}.tsv" using 1:2 title "{n}-order fit before", \\\n')
         pltfile.write(f'"../stripped/{serial_number}.tsv" using 1:2 title "original" with lines\n')
         pltfile.write(f'set title "Zoomed least squares polynomial fit from {start} - 50.0 Hz for UMIK-1 serial number {serial_number}"\n')
-        pltfile.write(f'set output "graphs/{serial_number}-fit-before-zoom.png"\n')
+        pltfile.write(f'set output "{serial_number}-fit-before-zoom.png"\n')
         pltfile.write('set xrange [5:50]\n')
         pltfile.write('set yrange [-8:0]\n')
         pltfile.write('replot\n')
@@ -80,7 +80,7 @@ def main(serial_number, extra=False):
         pltfile = open(f'../generated/{serial_number}-fit-after.plt', 'w')  # pylint:disable=consider-using-with,unspecified-encoding
         pltfile.write(f'set title "Least squares polynomial fit until {end} Hz for UMIK-1 serial number {serial_number}"\n')
         pltfile.write('set term png size 1920,1080\n')
-        pltfile.write(f'set output "graphs/{serial_number}-fit-after.png"\n')
+        pltfile.write(f'set output "{serial_number}-fit-after.png"\n')
         pltfile.write('set logscale x\n')
         pltfile.write('set xrange [10000:24000]\n')
         pltfile.write('set xlabel "frequency [Hz]"\n')
@@ -101,7 +101,7 @@ def main(serial_number, extra=False):
                 pltfile.write(f'"{serial_number}-fit-after-{n}.tsv" using 1:2 title "{n}-order fit after", \\\n')
         pltfile.write(f'"../stripped/{serial_number}.tsv" using 1:2 title "original" with lines\n')
         pltfile.write(f'set title "Zoomed least squares polynomial fit until 16000.0 - {end} Hz for UMIK-1 serial number {serial_number}"\n')
-        pltfile.write(f'set output "graphs/{serial_number}-fit-after-zoom.png"\n')
+        pltfile.write(f'set output "{serial_number}-fit-after-zoom.png"\n')
         pltfile.write('set xrange [16000:24000]\n')
         pltfile.write('set yrange [-6:4]\n')
         pltfile.write('replot\n')
@@ -141,7 +141,7 @@ def main(serial_number, extra=False):
     pltfile = open(f'../generated/{serial_number}-fit-response.plt', 'w')  # pylint:disable=consider-using-with,unspecified-encoding
     pltfile.write(f'set title "Least squares polynomial fit until {end} Hz for UMIK-1 serial number {serial_number}"\n')
     pltfile.write('set term png size 1920,1080\n')
-    pltfile.write(f'set output "graphs/{serial_number}-fit-sampled-response.png"\n')
+    pltfile.write(f'set output "{serial_number}-fit-sampled-response.png"\n')
     pltfile.write('set logscale x\n')
     pltfile.write('set xrange [10:25000]\n')
     pltfile.write('set xlabel "frequency [Hz]"\n')
@@ -163,7 +163,7 @@ def main(serial_number, extra=False):
                     factor = fit_after(freq)
                 outfile.write(f'{freq}\t{factor}\n')
     pltfile.write('set title "Least squares polynomial fit for extrapolation to 1 Hz - 10.054 Hz and 20016.816 Hz - 25000 Hz and linear interpolation in between for UMIK-1 serial number {}"\n'.format(serial_number))
-    pltfile.write(f'set output "graphs/{serial_number}-fit-response.png"\n')
+    pltfile.write(f'set output "{serial_number}-fit-response.png"\n')
     pltfile.write(f'plot "{serial_number}-fit-response.tsv" using 1:2 title "fitted" with lines, \\\n')
     pltfile.write(f'"../stripped/{serial_number}.tsv" using 1:2 title "original" with lines\n')
 
