@@ -125,23 +125,34 @@ def main(serial_number, extra=False):
                 else:
                     factor = fit_after(frequency)
                 outfile.write('{}\t{}\t{}\t{}\n'.format(line, factor, 10**(factor/10.0), sqrt(10**(factor/10.0))))  # freq, factor dB, power ratio, amplitude ratio  https://en.wikipedia.org/wiki/Decibel
-        outfile = open(f'../generated/{serial_number}-fit-audacity-equalizer-{freq}.xml', 'w')  # pylint:disable=consider-using-with,unspecified-encoding
-        infile = open(f'sox-frequencies-{freq}.txt', 'r')  # pylint:disable=consider-using-with,unspecified-encoding
-        outfile.write('<equalizationeffect>\n')
-        outfile.write(f'\t<curve name="UMIK-1 {serial_number} @ {freq}">\n')
-        for line in infile:
-            line = line.strip()
-            if line != '':
-                frequency = float(line)
-                if frequency < 10.054:
-                    factor = fit_before(frequency)
-                elif frequency <= 20016.816:
-                    factor = interp(frequency, frequencies, factors)
-                else:
-                    factor = fit_after(frequency)
-                outfile.write(f'\t\t<point f="{line}" d="{factor}"/>\n')
-        outfile.write('\t</curve>\n')
-        outfile.write('</equalizationeffect>\n')
+        if freq == '44100':
+            outfile_ge = open(f'../generated/{serial_number}-fit-audacity-graphic-equalizer.txt', 'w')  # pylint:disable=consider-using-with,unspecified-encoding
+            outfile_fc = open(f'../generated/{serial_number}-fit-audacity-filter-curve.txt', 'w')  # pylint:disable=consider-using-with,unspecified-encoding
+            infile = open('audacity-fequencies-44100.txt', 'r')  # pylint:disable=consider-using-with,unspecified-encoding
+            outfile_ge.write('GraphicEq:')
+            outfile_fc.write('FilterCurve:')
+            values = []
+            freqs = []
+            for line in infile:
+                line = line.strip()
+                if line != '':
+                    frequency = float(line)
+                    if frequency < 10.054:
+                        factor = fit_before(frequency)
+                    elif frequency <= 20016.816:
+                        factor = interp(frequency, frequencies, factors)
+                    else:
+                        factor = fit_after(frequency)
+                    freqs.append(line)
+                    values.append(factor)
+            for i in range(len(freqs)):
+                outfile_ge.write(f'f{i}="{freqs[i]}" ')
+                outfile_fc.write(f'f{i}="{freqs[i]}" ')
+            outfile_ge.write(' FilterLength="8191" InterpolateLin="0" InterpolationMethod="B-spline"')
+            outfile_fc.write(' FilterLength="8191" InterpolateLin="0" InterpolationMethod="B-spline"')
+            for i in range(len(freqs)):
+                outfile_ge.write(f' v{i}="{values[i]}"')
+                outfile_fc.write(f' v{i}="{values[i]}"')
 
     pltfile = open(f'../generated/{serial_number}-fit-response.plt', 'w')  # pylint:disable=consider-using-with,unspecified-encoding
     pltfile.write(f'set title "Least squares polynomial fit until {end} Hz for UMIK-1 serial number {serial_number}"\n')

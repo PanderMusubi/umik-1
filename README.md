@@ -86,13 +86,11 @@ Extended calibrations for e.g. SoX for sample frequencies of
 [44.1 kHz](example/7009115-fit-sampled-response-44100.xml) and
 [48 kHz](example/7009115-fit-sampled-response-48000.xml)
 
-Audacity equalizers for sample frequencies of
-[44.1 kHz](example/7009115-fit-audacity-equalizer-44100.xml) and
-[48 kHz](example/7009115-fit-audacity-equalizer-48000.xml)
-
-These files can be loaded into Audacity under `Effect / Filter Curve...` and
-`Effect / Graphic EQ...`. However, the format used by Audacity has changed.
-THESE XML FILES WILL GET REPLACED BY WORKING TXT FILES SOON.
+Support for Audacity are a
+[filter curve](example/7009115-fit-audacity-filter-curve.txt) and
+a [graphical equalizers](example/7009115-fit-audacity-graphical-equalizer.txt).
+These files can be imported into Audacity under `Effect / Filter Curve...` and
+`Effect / Graphic EQ...`.
 
 Please, create an [issue](https://github.com/PanderMusubi/umik-1/issues) for
 serial numbers to support, as generating these files for all available
