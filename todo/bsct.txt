@@ -1,0 +1,1 @@
+FilterCurve:f0="150" f1="300" FilterLength="8191" InterpolateLin="0" InterpolationMethod="B-spline" v0="-50" v1="0"

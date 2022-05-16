@@ -57,9 +57,9 @@ to start recording and 'space' to stop recording.
 
 ## Calibration
 
-In directory `scripts` are scripts to download calibration files, analyse them
+In directory `scripts` are scripts to download calibration files, analyze them
 and generate improved calibration files supporting a wider range of frequencies.
-See directory `download` of downladed calibration files and directory `stripped`
+See directory `download` of downloaded calibration files and directory `stripped`
 for the files stripped for further processing.
 
 In the directory `overview` are some overview plots generated on all downloaded
@@ -82,13 +82,17 @@ The files also support processing with SoX or Audacity. Some examples are:
 
 [Extended calibration](example/7009115-fit-response.tsv)
 
-Extended calibrations for e.g. SoX for sample frequencies of [375 Hz](example/7009115-fit-sampled-response-375.xml),  [3 kHz](example/7009115-fit-sampled-response-3000.xml),  [44.1 kHz](example/7009115-fit-sampled-response-44100.xml) and [48 kHz](example/7009115-fit-sampled-response-48000.xml)
+Extended calibrations for e.g. SoX for sample frequencies of
+[44.1 kHz](example/7009115-fit-sampled-response-44100.xml) and
+[48 kHz](example/7009115-fit-sampled-response-48000.xml)
 
-Audacity equalizers for sample frequencies of [375 Hz](example/7009115-fit-audacity-equalizer-375.xml),  [3 kHz](example/7009115-fit-audacity-equalizer-3000.xml),  [44.1 kHz](example/7009115-fit-audacity-equalizer-44100.xml) and [48 kHz](example/7009115-fit-audacity-equalizer-48000.xml)
+Audacity equalizers for sample frequencies of
+[44.1 kHz](example/7009115-fit-audacity-equalizer-44100.xml) and
+[48 kHz](example/7009115-fit-audacity-equalizer-48000.xml)
 
-These files can be loaded into Audacity under `Effect / Filter Curve EQ` and
-`Effect / Graphic Eq`. However, the format used by Audacity has changed (or I
-cannot find where it uses XML for the equalizer) and this needs refactoring.
+These files can be loaded into Audacity under `Effect / Filter Curve...` and
+`Effect / Graphic EQ...`. However, the format used by Audacity has changed.
+THESE XML FILES WILL GET REPLACED BY WORKING TXT FILES SOON.
 
 Please, create an [issue](https://github.com/PanderMusubi/umik-1/issues) for
 serial numbers to support, as generating these files for all available

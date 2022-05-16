@@ -8,6 +8,11 @@ from numpy import array, append, poly1d, polyfit, interp
 
 def main(serial_number, extra=False):
     '''Fits with extrapolation.'''
+    
+    freq_range = ('44100', '48000')
+    own = ('7007184', '7009115', '7009116', '7009117', '7009118')
+    if serial_number in own:
+        freq_range = ('44100', '48000', '3000', '375')
     if extra is False and isfile(f'../generated/{serial_number}-fit-response.tsv'):
         return
     frequencies = []
@@ -106,7 +111,7 @@ def main(serial_number, extra=False):
         pltfile.write('set yrange [-6:4]\n')
         pltfile.write('replot\n')
 
-    for freq in ('44100', '48000', '3000', '375', ):
+    for freq in freq_range:
         outfile = open(f'../generated/{serial_number}-fit-sampled-response-{freq}.tsv', 'w')  # pylint:disable=consider-using-with,unspecified-encoding
         infile = open(f'sox-frequencies-{freq}.txt', 'r')  # pylint:disable=consider-using-with,unspecified-encoding
         for line in infile:
